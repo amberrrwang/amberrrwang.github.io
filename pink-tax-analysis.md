@@ -27,3 +27,12 @@ Each item includes:
 - Product category
 - Price
 - Additional product attributes (when available)
+
+## Research Question
+How do gender-based pricing differences vary across different product categories in retail clothing?
+Is the price difference significant for male and female products in any of the clothing categories?
+If so, which clothing categories and which ones are more expensive?
+
+### Hypothesis
+Gender-based price disparities are significant in the categories investigated and women pay more than men for functionally identical products in different clothing categories.
+- We predict that this difference occurs because social norms expect women to put more effort into self-maintenance and appearance, which leads women to being more willing to pay more for products related to beauty. This inclines the sellers to increase the price of women’s products.
