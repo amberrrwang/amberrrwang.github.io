@@ -45,6 +45,7 @@ Mean Price
 Standard Deviation
 - Men: 25.122
 - Women: 18.847
+
 The data shows that men’s clothing items have both a higher average price and greater price variability than women’s items. This may suggest that men pay more for clothing items within the selected Zara categories.
 However, several factors should be considered.
 - First, the number of women’s items is about 40% greater than men’s items, which may indicate that Zara offers women’s products across a wider and more affordable price range.
