@@ -44,9 +44,21 @@ Gender-based price disparities are significant in the categories investigated an
 ![Pink Tax Chart](/images/density-plot-of-price.png)
 
 ### Category Analysis
+#### Shirts
+![Pink Tax Chart](/images/shirts.png)
+![Pink Tax Chart](/images/shirts-box.png)
 #### Jeans
 ![Pink Tax Chart](/images/jeans.png)
 ![Pink Tax Chart](/images/jeans-box.png)
+#### Trousers
+![Pink Tax Chart](/images/trousers.png)
+![Pink Tax Chart](/images/trousers-box.png)
+#### Jackets
+![Pink Tax Chart](/images/jackets.png)
+![Pink Tax Chart](/images/jackets-box.png)
+#### Blazers
+![Pink Tax Chart](/images/blazers.png)
+![Pink Tax Chart](/images/blazers-box.png)
 #### Shoes
 ![Pink Tax Chart](/images/shoes.png)
 ![Pink Tax Chart](/images/shoes-box.png)
