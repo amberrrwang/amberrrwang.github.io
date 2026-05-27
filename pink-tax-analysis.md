@@ -41,6 +41,7 @@ Gender-based price disparities are significant in the categories investigated an
 Mean Price
 - Men: 57.674
 - Women: 50.370
+
 Standard Deviation
 - Men: 25.122
 - Women: 18.847
