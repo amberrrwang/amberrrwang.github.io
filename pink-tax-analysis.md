@@ -37,10 +37,14 @@ If so, which clothing categories and which ones are more expensive?
 Gender-based price disparities are significant in the categories investigated and women pay more than men for functionally identical products in different clothing categories.
 - We predict that this difference occurs because social norms expect women to put more effort into self-maintenance and appearance, which leads women to be more willing to pay more for products related to beauty. This inclines the sellers to increase the price of women’s products.
 
+## Data Summary
+
 ## Exploratory Data Analysis
 ### Distribution of price in each clothing category
 ![Pink Tax Chart](/images/distribution-of-price.png)
 ![Pink Tax Chart](/images/density-plot-of-price.png)
+
+While the prices for men and women are both densely distributed below 50 dollars, more women's items are within the lower range. There is also a drastic decrease in the density of female items' price distribution as it approaches 50 dollars, while the dip in male items' distribution is much less apparent, with quite a few of them around 50 to 60 dollars. 
 
 ### Category Analysis
 #### Shirts
