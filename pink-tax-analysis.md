@@ -39,7 +39,14 @@ Gender-based price disparities are significant in the categories investigated an
 
 
 ## Exploratory Data Analysis
-### Distribution of price in each clothing categories
+### Distribution of price in each clothing category
 ![Pink Tax Chart](/images/distribution-of-price.png)
 ![Pink Tax Chart](/images/density-plot-of-price.png)
 
+### Category Analysis
+#### Jeans
+![Pink Tax Chart](/images/jeans.png)
+![Pink Tax Chart](/images/jeans-box.png)
+#### Shoes
+![Pink Tax Chart](/images/shoes.png)
+![Pink Tax Chart](/images/shoes-box.png)
