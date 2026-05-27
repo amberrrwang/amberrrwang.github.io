@@ -62,3 +62,5 @@ Gender-based price disparities are significant in the categories investigated an
 #### Shoes
 ![Pink Tax Chart](/images/shoes.png)
 ![Pink Tax Chart](/images/shoes-box.png)
+
+From the category analysis, the jeans and blazer categories are inconclusive due to limited sample sizes, likely because some items overlap with the trousers and jackets categories. Among the remaining categories — jackets, shirts, trousers and shoes — shoes are the only category that showed no statistically significant price difference between men’s and women’s products. In contrast, jackets, shirts and trousers all show statistically significant differences, with men’s items generally having higher price distributions than women’s items. These categories also exhibit greater variance and wider price ranges for men’s products. This suggests that women’s clothing prices are more concentrated within a narrower and generally more affordable price range.
