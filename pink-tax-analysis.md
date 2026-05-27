@@ -67,8 +67,13 @@ From the category analysis, the jeans and blazer categories are inconclusive due
 
 ### Overall Comparison
 ![Pink Tax Chart](/images/mean-price.png)
+
 Overall, men's products have higher mean prices. While the mean prices of women's products are relatively close, men's products exhibit a greater degree of variability in their mean prices.
+
 ![Pink Tax Chart](/images/price-range.png)
+
 For jackets, jeans, shirts and trousers, the range of prices is higher for men, while for blazers and shoes, the range of prices is higher for women.
+
 ![Pink Tax Chart](/images/number-of-items.png)
+
 It is clear that most clothing categories do not have balanced datasets, making it difficult to draw strong conclusions. As mentioned previously, the jeans and blazers categories contain relatively small sample sizes compared to the other categories, which limits the reliability of the analysis for those groups.
