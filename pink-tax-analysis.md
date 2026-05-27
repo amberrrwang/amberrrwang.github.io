@@ -37,7 +37,17 @@ If so, which clothing categories and which ones are more expensive?
 Gender-based price disparities are significant in the categories investigated and women pay more than men for functionally identical products in different clothing categories.
 - We predict that this difference occurs because social norms expect women to put more effort into self-maintenance and appearance, which leads women to be more willing to pay more for products related to beauty. This inclines the sellers to increase the price of women’s products.
 
-## Data Summary
+## Data Overview
+Mean Price
+- Men: 57.674
+- Women: 50.370
+Standard Deviation
+- Men: 25.122
+- Women: 18.847
+The data shows that men’s clothing items have both a higher average price and greater price variability than women’s items. This may suggest that men pay more for clothing items within the selected Zara categories.
+However, several factors should be considered.
+- First, the number of women’s items is about 40% greater than men’s items, which may indicate that Zara offers women’s products across a wider and more affordable price range.
+- Second, the datasets contain different category distributions and item counts, so the overall result may be influenced by certain categories where men’s products are more expensive and offered in more/less counts.
 
 ## Exploratory Data Analysis
 ### Distribution of price in each clothing category
