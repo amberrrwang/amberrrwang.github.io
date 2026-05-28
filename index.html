@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Amber's Portfolio</title>
+  <title>Amber's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 24px;
+      background-color: #f8f9fb;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .projects {
+      display: grid;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .card a {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
-    <h1>Welcome to my portfolio</h1>
-    <h2>Projects</h2>
-    <a href="/pink-tax-analysis/">Pink Tax Analysis</a><br>
-    <a href="/readmission-risk-modeling/">Readmission Risk Modeling</a><br>
-    <a href="/game-price-prediction-and-analysis/">Game Price Prediction and Analysis</a><br>
-    <a href="/beauty-product-rating-predictor/">Beauty Product Rating Predictor</a><br>
-    <a href="/classification-of-news-headline/">Classification of News Headline</a>
-</body>
+  <h1>Welcome to my portfolio</h1>
+  <p>Hi, I’m Amber. I’m interested in business analytics, supply chain analytics, and data-driven decision making.</p>
 
+  <h2>Projects</h2>
+
+  <div class="projects">
+    <div class="card"><a href="/pink-tax-analysis/">Pink Tax Analysis</a></div>
+    <div class="card"><a href="/readmission-risk-modeling/">Readmission Risk Modeling</a></div>
+    <div class="card"><a href="/game-price-prediction-and-analysis/">Game Price Prediction and Analysis</a></div>
+    <div class="card"><a href="/beauty-product-rating-predictor/">Beauty Product Rating Predictor</a></div>
+    <div class="card"><a href="/classification-of-news-headline/">Classification of News Headline</a></div>
+  </div>
+</body>
 </html>
