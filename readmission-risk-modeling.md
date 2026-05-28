@@ -4,7 +4,7 @@ title: "Readmission Risk Modeling"
 permalink: /readmission-risk-modeling/
 ---
 
-# Pink Tax Analysis: SmartDischarge: Early Prediction of ICU Readmission Risk
+# SmartDischarge: Early Prediction of ICU Readmission Risk
 
 ## Abstract
 Unplanned ICU readmissions are a significant source of preventable harm, clinician burden and healthcare system cost. Nurses are often the first to sense that something’s not right, yet existing predictive models are sometimes not integrated into real clinical workflows.
