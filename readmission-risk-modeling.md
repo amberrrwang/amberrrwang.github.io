@@ -98,4 +98,5 @@ Later, shifting the focus to 7-day rehospitalization risk, we observed that the 
 | 0.5 | 0.796 | 0.138 | 0.184 | 0.158 |
 
 ![Risk Visual](/datathon-images/7d-distribution.png)
+
 The histogram above shows the distribution of predicted probabilities for 7-day rehospitalization. This reflects the strong class imbalance in the dataset, where the majority of patients did not experience rehospitalization within 7 days. A smaller number of patients received higher predicted probabilities, indicating that the model identified a limited subset of potentially higher-risk cases.
