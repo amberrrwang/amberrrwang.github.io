@@ -90,6 +90,7 @@ Then, after tuning the reduced-feature XGBoost model, the model achieved a test 
 
 ### Reduced XGBoost Model with target = rehosp7d
 Later, shifting the focus to 7-day rehospitalization risk, we observed that the dataset became highly imbalanced, with only 10.34% positive cases. As a result, model performance was evaluated across multiple probability thresholds to better understand the trade-off between overall accuracy and the ability to identify true rehospitalization cases. While higher thresholds improved overall accuracy, they also reduced recall for positive cases, indicating that the model became more conservative in predicting rehospitalization events.
+
 | Threshold | Accuracy | Precision (Class 1) | Recall (Class 1) | F1-Score (Class 1) |
 |---|---|---|---|---|
 | 0.3 | 0.722 | 0.127 | 0.285 | 0.175 |
