@@ -52,5 +52,5 @@ Design principles:
 ![Risk Visual](/datathon-images/race.png)
 ![Risk Visual](/datathon-images/martial-status.png)
 
-
-
+## Model
+### Baseline Model: XGBoost
