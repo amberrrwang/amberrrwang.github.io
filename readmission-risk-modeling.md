@@ -63,4 +63,4 @@ Design principles:
 
 ![Risk Visual](/datathon-images/top-xgboost.png)
 
-Since the baseline XGBoost model achieved only moderate predictive performance (Test AUC = 0.676), we further examined the model’s feature importance scores to better understand which variables contributed most to prediction. This analysis helped identify the clinical and operational factors most associated with the target outcome and provided insight into potential areas for additional feature engineering and model improvement.
+Since the baseline XGBoost model achieved only moderate predictive performance, we further examined the model’s feature importance scores to better understand which variables contributed most to prediction. This analysis helped identify the clinical and operational factors most associated with the target outcome and provided insight into potential areas for additional feature engineering and model improvement.
