@@ -67,6 +67,7 @@ Since the baseline XGBoost model achieved only moderate predictive performance, 
 
 ### Reduced XGBoost
 Then, keeping only the selected features, the model yields following accuracy: 
+| Metric | Value |
 |---|---|
 | Test AUC | 0.636 |
 | Accuracy @ 0.5 | 0.710 |
