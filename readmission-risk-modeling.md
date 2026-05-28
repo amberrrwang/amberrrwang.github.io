@@ -54,3 +54,9 @@ Design principles:
 
 ## Model
 ### Baseline Model: XGBoost
+Tuned XGB — Test AUC: 0.676
+Tuned XGB — Accuracy @0.5: 0.643
+Tuned XGB — Best Accuracy: 0.721 at threshold 0.747
+
+![Risk Visual](/datathon-images/top-xgboost.png)
+Since the baseline XGBoost model achieved only moderate predictive performance (Test AUC = 0.676), we further examined the model’s feature importance scores to better understand which variables contributed most to prediction. This analysis helped identify the clinical and operational factors most associated with the target outcome and provided insight into potential areas for additional feature engineering and model improvement.
