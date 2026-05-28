@@ -65,7 +65,7 @@ Design principles:
 
 Since the baseline XGBoost model achieved only moderate predictive performance, we further examined the model’s feature importance scores to better understand which variables contributed most to prediction. This analysis helped identify the clinical and operational factors most associated with the target outcome and provided insight into potential areas for additional feature engineering and model improvement.
 
-### Reduced XGBoost Model
+### Reduced XGBoost Model with target = rehosp30d
 Then, keeping only the selected features, the model yields the following accuracy: 
 | Metric | Value |
 |---|---|
@@ -87,3 +87,11 @@ Then, after tuning the reduced-feature XGBoost model, the model achieved a test 
 | Best Test Accuracy | 0.721 |
 | Optimal Threshold | 0.775 |
 | Test AUC | 0.639 |
+
+### Reduced XGBoost Model with target = rehosp7d
+Later, shifting the focus to 7-day rehospitalization risk, we observed that the dataset became highly imbalanced, with only 10.34% positive cases. As a result, model performance was evaluated across multiple probability thresholds to better understand the trade-off between overall accuracy and the ability to identify true rehospitalization cases. While higher thresholds improved overall accuracy, they also reduced recall for positive cases, indicating that the model became more conservative in predicting rehospitalization events.
+| Threshold | Accuracy | Precision (Class 1) | Recall (Class 1) | F1-Score (Class 1) |
+|---|---|---|---|---|
+| 0.3 | 0.722 | 0.127 | 0.285 | 0.175 |
+| 0.4 | 0.761 | 0.130 | 0.228 | 0.165 |
+| 0.5 | 0.796 | 0.138 | 0.184 | 0.158 |
