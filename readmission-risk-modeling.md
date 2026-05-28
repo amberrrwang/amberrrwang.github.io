@@ -54,9 +54,12 @@ Design principles:
 
 ## Model
 ### Baseline Model: XGBoost
-— Tuned XGB Test AUC: 0.676
-— Tuned XGB Accuracy @0.5: 0.643
-— Tuned XGB Best Accuracy: 0.721 at threshold 0.747
+| Metric | Value |
+|---|---|
+| Tuned XGB Test AUC | 0.676 |
+| Tuned XGB Accuracy @ 0.5 | 0.643 |
+| Tuned XGB Best Accuracy | 0.721 |
+| Optimal Threshold | 0.747 |
 
 ![Risk Visual](/datathon-images/top-xgboost.png)
 
