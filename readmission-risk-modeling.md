@@ -65,8 +65,8 @@ Design principles:
 
 Since the baseline XGBoost model achieved only moderate predictive performance, we further examined the model’s feature importance scores to better understand which variables contributed most to prediction. This analysis helped identify the clinical and operational factors most associated with the target outcome and provided insight into potential areas for additional feature engineering and model improvement.
 
-### Reduced XGBoost
-Then, keeping only the selected features, the model yields following accuracy: 
+### Reduced XGBoost Model
+Then, keeping only the selected features, the model yields the following accuracy: 
 | Metric | Value |
 |---|---|
 | Test AUC | 0.636 |
@@ -74,4 +74,4 @@ Then, keeping only the selected features, the model yields following accuracy:
 
 ![Risk Visual](/datathon-images/top20.png)
 
-Blue points represent predicted rehospitalization probabilities, while orange points indicate patients who were actually rehospitalized. The alignment between high predicted probabilities and true rehospitalization cases suggests that the model is able to identify some high-risk patients, though the relatively narrow probability range indicates moderate predictive separation.
+Blue points represent predicted rehospitalization probabilities, while orange points indicate patients who were actually rehospitalized. The concentration of true rehospitalization cases among the higher-ranked predictions suggests that the reduced-feature XGBoost model is still able to identify some higher-risk patients despite using fewer variables. However, the relatively narrow probability range indicates only moderate separation between rehospitalized and non-rehospitalized patients.
