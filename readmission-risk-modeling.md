@@ -42,3 +42,15 @@ Design principles:
 - Intended for real-time or near–real-time use
 - Supports — not replaces — clinical judgment
 - The tool is envisioned as a decision-support layer that flags elevated risk early, enabling timely interventions such as closer monitoring, delayed discharge, or care escalation.
+
+## Data Overview
+### Visualizations
+![Risk Visual](/datathon-images/7d-dist.png)
+![Risk Visual](/datathon-images/30d-dist.png)
+![Risk Visual](/datathon-images/admission-type.png)
+![Risk Visual](/datathon-images/age.png)
+![Risk Visual](/datathon-images/race.png)
+![Risk Visual](/datathon-images/martial-status.png)
+
+
+
