@@ -75,3 +75,5 @@ Then, keeping only the selected features, the model yields the following accurac
 ![Risk Visual](/datathon-images/top20.png)
 
 Blue points represent predicted rehospitalization probabilities, while orange points indicate patients who were actually rehospitalized. The concentration of true rehospitalization cases among the higher-ranked predictions suggests that the reduced-feature XGBoost model is still able to identify some higher-risk patients despite using fewer variables. However, the relatively narrow probability range indicates only moderate separation between rehospitalized and non-rehospitalized patients.
+
+It is also worth noting that reducing the feature set improved classification accuracy at the default threshold but reduced overall discriminatory performance, suggesting a trade-off between model simplicity and ranking capability.
