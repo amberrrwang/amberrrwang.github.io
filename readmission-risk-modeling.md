@@ -54,6 +54,7 @@ Design principles:
 
 ## Model
 ### Baseline Model: XGBoost
+
 | Metric | Value |
 |---|---|
 | Tuned XGB Test AUC | 0.676 |
@@ -67,6 +68,7 @@ Since the baseline XGBoost model achieved only moderate predictive performance, 
 
 ### Reduced XGBoost Model with target = rehosp30d
 Then, keeping only the selected features, the model yields the following accuracy: 
+
 | Metric | Value |
 |---|---|
 | Test AUC | 0.636 |
@@ -151,7 +153,7 @@ The correlation matrix shows the linear relationships among the selected feature
 
 Although predicting short-term rehospitalization remained challenging due to class imbalance and complex clinical patterns, the final XGBoost + SMOTE model improved overall prediction stability and minority-class detection. The final model also produced a probability distribution concentrated mainly in the low-risk range, which is clinically reasonable given that most patients were not rehospitalized within 7 days. At the same time, the model was still able to identify a smaller subset of potentially higher-risk patients who may benefit from additional monitoring or intervention.
 
-Overall, the project demonstrates both the potential and limitations of machine learning approaches for rehospitalization risk prediction in healthcare datasets, while showing how preprocessing, temporal feature engineering and class balancing techniques can improve model performance and clinical interpretability.
+Overall, the project demonstrates both the potential and limitations of machine learning approaches for rehospitalization risk prediction in healthcare datasets, while showing how preprocessing, temporal feature engineering and class-balancing techniques can improve model performance and clinical interpretability.
 
 ## Future Work
 - External validation on additional hospital datasets
