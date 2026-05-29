@@ -13,6 +13,11 @@ SmartDischarge is a nurse-centered, data-driven risk scoring tool that predicts 
 
 This project was developed as part of the Smarter Care Datathon at the University of Pennsylvania.
 
+## Project Motivation
+Hospital rehospitalization and ICU readmission are important healthcare challenges because they may indicate worsening patient conditions, increased healthcare costs and missed opportunities for early intervention. Predicting which patients are at higher risk of short-term rehospitalization is difficult due to complex clinical patterns and highly imbalanced healthcare data.
+
+This project was motivated by the potential for machine learning models to support earlier risk identification using clinical and hospitalization-related features. By predicting rehospitalization risk, the project aims to explore how data-driven methods may assist healthcare providers in identifying higher-risk patients who could benefit from additional monitoring or proactive care.
+
 ## Key Question
 How can we predict early which ICU patients are at risk of deterioration so clinicians can intervene proactively?
 - We focused specifically on ICU readmission risk within 48 hours, a clinically meaningful outcome associated with higher mortality, longer hospital stays and increased costs.
@@ -170,3 +175,4 @@ Overall, the project demonstrates both the potential and limitations of machine 
 - Integration with electronic health record (EHR) systems
 - Expansion to related clinical outcomes such as mortality and length of stay
 - Fairness and bias analysis across patient demographic subgroups
+- Development of an interactive clinical risk dashboard for real-time rehospitalization monitoring and decision support
