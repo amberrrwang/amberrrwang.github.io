@@ -101,7 +101,7 @@ Later, shifting the focus to 7-day rehospitalization risk, we observed that the 
 
 The histogram above shows the distribution of predicted probabilities for 7-day rehospitalization. This reflects the strong class imbalance in the dataset, where the majority of patients did not experience rehospitalization within 7 days. A smaller number of patients received higher predicted probabilities, indicating that the model identified a limited subset of potentially higher-risk cases.
 
-### SMOTE
+### SMOTE Model (with all features)
 Because the dataset was  imbalanced, with rehospitalization cases representing only a small proportion of the observations, we applied SMOTE (Synthetic Minority Oversampling Technique) to improve class balance during model training. The goal was to reduce bias toward the majority class and improve the model’s ability to identify true rehospitalization cases, particularly recall and F1-score for the positive class.
 
 | Metric | Value |
@@ -119,3 +119,27 @@ After applying SMOTE, the model achieved a much higher test accuracy of 0.896, i
 ![Risk Visual](/datathon-images/smote-distribution.png)
 
 Compared to the earlier model, the predicted probabilities are more spread out and less concentrated near 0, indicating that the balanced training data encouraged the model to assign higher risk scores to more patients. However, most predictions still remain in the lower probability range, suggesting that the model continues to be relatively conservative in predicting rehospitalization events.
+
+### Final Model (XGBoost + SMOTE + selected features)
+
+| Metric | Value |
+|---|---|
+| Test AUC | 0.588 |
+| Accuracy @ 0.5 | 0.876 |
+| Precision @ 0.5 | 0.238 |
+| Recall @ 0.5 | 0.088 |
+| F1-Score @ 0.5 | 0.128 |
+| Best Test Accuracy | 0.898 |
+| Optimal Threshold | 0.640 |
+
+The final XGBoost + SMOTE model  achieved strong overall classification accuracy, reaching 0.876 at the default threshold and a maximum accuracy of 0.898 at the optimized threshold of 0.640. Applying SMOTE improved the model’s ability to identify minority-class rehospitalization cases compared to earlier versions, increasing both recall and F1-score.
+
+Although the model’s discriminatory performance remained moderate (AUC = 0.588), the final pipeline demonstrated that integrating engineered temporal features, balanced training data and selected clinical variables can improve prediction stability for highly imbalanced healthcare datasets.
+
+![Risk Visual](/datathon-images/final.png)
+The distribution of predicted probabilities from the final  model is more spread out compared to earlier models, with probabilities extending further into the medium- and high-risk ranges. This suggests that this model can assign more differentiated risk estimates across patients. However, most predictions still remain concentrated in the lower probability range, indicating that the model continues to classify the majority of patients as lower risk for 7-day rehospitalization.
+
+![Risk Visual](/datathon-images/risk-level.png)
+The risk level distribution shows that most patients were classified as low risk, while a smaller proportion were assigned to medium and high-risk categories. This pattern is consistent with the underlying class imbalance in the dataset, where true rehospitalization cases were relatively rare. The model therefore assigned elevated risk scores to only a limited subset of patients identified as potentially higher risk.
+
+
