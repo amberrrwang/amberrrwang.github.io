@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: "Steam Applications Price Prediction and Analysis"
