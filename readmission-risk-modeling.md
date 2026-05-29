@@ -137,9 +137,25 @@ The final XGBoost + SMOTE model  achieved strong overall classification accuracy
 Although the model’s discriminatory performance remained moderate (AUC = 0.588), the final pipeline demonstrated that integrating engineered temporal features, balanced training data and selected clinical variables can improve prediction stability for highly imbalanced healthcare datasets.
 
 ![Risk Visual](/datathon-images/final.png)
+
 The distribution of predicted probabilities from the final  model is more spread out compared to earlier models, with probabilities extending further into the medium- and high-risk ranges. This suggests that this model can assign more differentiated risk estimates across patients. However, most predictions still remain concentrated in the lower probability range, indicating that the model continues to classify the majority of patients as lower risk for 7-day rehospitalization.
 
 ![Risk Visual](/datathon-images/risk-level.png)
+
 The risk level distribution shows that most patients were classified as low risk, while a smaller proportion were assigned to medium and high-risk categories. This pattern is consistent with the underlying class imbalance in the dataset, where true rehospitalization cases were relatively rare. The model therefore assigned elevated risk scores to only a limited subset of patients identified as potentially higher risk.
 
+## Conclusion
+The correlation matrix shows the linear relationships among the selected features and the 7-day rehospitalization target. Most variables exhibit relatively weak correlations with rehospitalization risk, suggesting that no single feature alone strongly predicts the outcome. However, prior hospitalization variables (`prev90d_hosp_sum` and `prev90d_hosp`) show moderate positive correlation with each other, indicating that historical hospitalization patterns are related. Additionally, `sepsistype` and `icu_hx` display a positive relationship, suggesting that more severe sepsis cases may be associated with ICU history. Overall, the relatively low pairwise correlations suggest limited multicollinearity among features while also highlighting the difficulty of predicting short-term rehospitalization using individual variables alone.
 
+![Risk Visual](/datathon-images/correlation.png)
+
+Although predicting short-term rehospitalization remained challenging due to class imbalance and complex clinical patterns, the final XGBoost + SMOTE model improved overall prediction stability and minority-class detection. The final model also produced a probability distribution concentrated mainly in the low-risk range, which is clinically reasonable given that most patients were not rehospitalized within 7 days. At the same time, the model was still able to identify a smaller subset of potentially higher-risk patients who may benefit from additional monitoring or intervention.
+
+Overall, the project demonstrates both the potential and limitations of machine learning approaches for rehospitalization risk prediction in healthcare datasets, while showing how preprocessing, temporal feature engineering and class balancing techniques can improve model performance and clinical interpretability.
+
+## Future Work
+- External validation on additional hospital datasets
+- Prospective evaluation in clinical settings
+- Integration with live EHR systems
+- Expansion to other outcomes (e.g., mortality, length of stay)
+- Fairness and bias analysis across patient subgroups
