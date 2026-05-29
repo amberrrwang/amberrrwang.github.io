@@ -7,7 +7,7 @@ permalink: /game-price-prediction-analysis/
 # Game Price Prediction and Analysis
 
 ## Abstract
-This is a data science and analytics project that uses historical Steam application data to build and evaluate machine learning models that predict app prices. The project explores data preprocessing, feature engineering, model training and evaluation to understand how different game characteristics influence pricing. In addition to prediction, the analysis examines how factors such as genres, release timing, platform support and user engagement metrics relate to pricing patterns in the Steam marketplace.
+This is a data science and analytics project that uses historical Steam application data to build and evaluate machine learning models that predict app prices. The project explores data preprocessing, feature engineering, model training and evaluation to understand how different game characteristics influence pricing. In addition to prediction, the analysis examines how factors such as genres, release timing, platform support and user engagement metrics relate to pricing patterns in the Steam marketplace. It also demonstrates how analytics and machine learning can support pricing analysis and data-driven business decisions.
 
 The project was completed as part of the Big Data Analytics course at the University of Pennsylvania.
 
