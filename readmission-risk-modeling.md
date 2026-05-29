@@ -52,6 +52,12 @@ Design principles:
 ![Risk Visual](/datathon-images/race.png)
 ![Risk Visual](/datathon-images/martial-status.png)
 
+The visualizations above provide an overview of the patient population and rehospitalization patterns within the dataset. Both the 7-day and 30-day rehospitalization targets show clear class imbalance, with the majority of patients not experiencing rehospitalization. This imbalance later motivated the use of SMOTE during model training.
+
+The admission type distribution indicates that most hospital admissions came from emergency-related categories, particularly “EW EMER.” and “OBSERVATION ADMIT,” suggesting that acute or urgent care situations make up a large portion of the dataset. The age distribution shows that most patients were older adults, primarily between ages 65 and 90, which is consistent with populations at higher risk for hospitalization and readmission.
+
+The marital status and race distributions further highlight the demographic composition of the dataset, with married patients and White patients representing the largest groups. These exploratory visualizations helped identify important clinical and demographic patterns while also guiding later feature selection and modeling decisions.
+
 ## Model
 ### Baseline Model: XGBoost
 
