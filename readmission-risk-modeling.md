@@ -100,3 +100,22 @@ Later, shifting the focus to 7-day rehospitalization risk, we observed that the 
 ![Risk Visual](/datathon-images/7d-distribution.png)
 
 The histogram above shows the distribution of predicted probabilities for 7-day rehospitalization. This reflects the strong class imbalance in the dataset, where the majority of patients did not experience rehospitalization within 7 days. A smaller number of patients received higher predicted probabilities, indicating that the model identified a limited subset of potentially higher-risk cases.
+
+### SMOTE
+Because the dataset was  imbalanced, with rehospitalization cases representing only a small proportion of the observations, we applied SMOTE (Synthetic Minority Oversampling Technique) to improve class balance during model training. The goal was to reduce bias toward the majority class and improve the model’s ability to identify true rehospitalization cases, particularly recall and F1-score for the positive class.
+
+| Metric | Value |
+|---|---|
+| Test AUC | 0.582 |
+| Accuracy @ 0.5 | 0.895 |
+| Precision @ 0.5 | 0.250 |
+| Recall @ 0.5 | 0.004 |
+| F1-Score @ 0.5 | 0.009 |
+| Best Test Accuracy | 0.896 |
+| Optimal Threshold | 0.439 |
+
+After applying SMOTE, the model achieved a much higher test accuracy of 0.896, indicating strong performance in correctly classifying the majority of cases. However, the model still showed limited ability to identify true rehospitalization events, suggesting that predicting 7-day rehospitalization remains challenging despite balancing the dataset.
+
+![Risk Visual](/datathon-images/smote-distribution.png)
+
+Compared to the earlier model, the predicted probabilities are more spread out and less concentrated near 0, indicating that the balanced training data encouraged the model to assign higher risk scores to more patients. However, most predictions still remain in the lower probability range, suggesting that the model continues to be relatively conservative in predicting rehospitalization events.
