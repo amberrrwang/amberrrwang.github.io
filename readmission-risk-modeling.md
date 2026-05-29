@@ -80,6 +80,7 @@ Blue points represent predicted rehospitalization probabilities, while orange po
 
 It is also worth noting that reducing the feature set improved classification accuracy at the default threshold but reduced overall discriminatory performance, suggesting a trade-off between model simplicity and ranking capability.
 
+#### Fine-tuning 
 Then, after tuning the reduced-feature XGBoost model, the model achieved a test AUC of 0.639 and a maximum test accuracy of 0.721 at an optimized threshold of 0.775. Although the simplified model maintained competitive accuracy, the decrease in AUC compared to the full-feature model suggests that reducing the feature set may have lowered the model’s overall discriminatory ability.
 
 | Metric | Value |
