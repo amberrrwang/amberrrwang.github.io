@@ -4,7 +4,7 @@ title: "Steam Applications Price Prediction and Analysis"
 permalink: /game-price-prediction-analysis/
 ---
 
-# Steam Applications Price Prediction
+# Game Price Prediction and Analysis
 
 ## Abstract
 This is a data science and analytics project that uses historical Steam application data to build and evaluate machine learning models that predict app prices.
