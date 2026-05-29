@@ -163,8 +163,8 @@ Although predicting short-term rehospitalization remained challenging due to cla
 Overall, the project demonstrates both the potential and limitations of machine learning approaches for rehospitalization risk prediction in healthcare datasets, while showing how preprocessing, temporal feature engineering and class-balancing techniques can improve model performance and clinical interpretability.
 
 ## Future Work
-- External validation on additional hospital datasets
-- Prospective evaluation in clinical settings
-- Integration with live EHR systems
-- Expansion to other outcomes (e.g., mortality, length of stay)
-- Fairness and bias analysis across patient subgroups
+- External validation using additional hospital datasets
+- Prospective evaluation in real clinical settings
+- Integration with electronic health record (EHR) systems
+- Expansion to related clinical outcomes such as mortality and length of stay
+- Fairness and bias analysis across patient demographic subgroups
