@@ -62,6 +62,7 @@ The distribution of the currency is unbalanced as the USD consists of the majori
 ### Genre-related Features
 #### Distribution of the Top Genres
 ![Game Visual](/game-images/genre.png)
+
 This bar plot shows that a few dominant genres make up a large share of the platform, while many others are represented much less frequently.
 
 ## Feature Engineering
