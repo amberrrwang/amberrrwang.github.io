@@ -45,7 +45,7 @@ Design principles:
 - Nurse-centered and workflow-aware
 - Interpretable risk scores rather than black-box predictions
 - Intended for real-time or near–real-time use
-- Supports — not replaces — clinical judgment
+- Supports clinical judgment
 - The tool is envisioned as a decision-support layer that flags elevated risk early, enabling timely interventions such as closer monitoring, delayed discharge, or care escalation.
 
 ## Data Overview
