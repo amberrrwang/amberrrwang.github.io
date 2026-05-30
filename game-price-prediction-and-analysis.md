@@ -54,6 +54,16 @@ The weighted_vote_score is a 0 to 1 helpfulness metric, but the histogram shows 
 
 The majority of Steam applications in our dataset are classified as games, with nearly twice as many entries as DLCs. Music products make up only a very small fraction.
 
+#### Distribution of Currency Count 
+![Game Visual](/game-images/currency.png)
+
+The distribution of the currency is unbalanced as the USD consists of the majority of the dataset, with all other currencies appearing at much lower frequencies. So, we would later convert all of the game prices into USD to make the computation and interpretation easier.
+
+### Genre-related Features
+#### Distribution of the Top Genres
+![Game Visual](/game-images/genre.png)
+This bar plot shows that a few dominant genres make up a large share of the platform, while many others are represented much less frequently.
+
 ## Feature Engineering
 
 ## Model
