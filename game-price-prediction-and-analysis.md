@@ -25,3 +25,11 @@ The dataset is derived from publicly available Steam application metadata, conta
 
 ## Data Preprocessing
 The datasets were cleaned by removing redundant columns, handling missing values and filtering incomplete records. Non-informative features such as timestamps, image links and columns with excessive missing values were dropped. Rows missing key variables, including game price and release information, were also removed. In addition, a genre mapping table was created to link each game with all associated genres for further pricing analysis.
+
+## Exploratory Data Analysis
+
+## Feature Engineering
+
+## Models
+
+## Conclusion and Discussion
