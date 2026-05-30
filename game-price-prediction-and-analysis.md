@@ -68,7 +68,7 @@ This bar plot shows that a few dominant genres make up a large share of the plat
 #### Heat map of Numerical Columns
 ![Game Visual](/game-images/correlation.png)
 
-The heat map `mat_initial_pricem` does not show meaningful correlation with any of the numerical review or user-behavior features in the dataset. This suggests that variables like playtime, number of games owned, review helpfulness or engagement metrics do not directly explain how a game is priced. If our goal is to predict price, these numeric features alone are likely insufficient. However, they may still become useful when combined with other information. For example, through nonlinear models like Random Forests or interactions with genre or release year. The weak correlations highlight the need to incorporate additional features or more complex relationships to predict price successfully.
+The heat map shows that `mat_initial_pricem` does not show meaningful correlation with any of the numerical review or user-behavior features in the dataset. This suggests that variables like playtime, number of games owned, review helpfulness or engagement metrics do not directly explain how a game is priced. If our goal is to predict price, these numeric features alone are likely insufficient. However, they may still become useful when combined with other information. For example, through nonlinear models like Random Forests or interactions with genre or release year. The weak correlations highlight the need to incorporate additional features or more complex relationships to predict price successfully.
 
 
 ## Feature Engineering
