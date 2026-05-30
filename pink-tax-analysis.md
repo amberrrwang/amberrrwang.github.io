@@ -95,7 +95,7 @@ It is clear that most clothing categories did not have balanced datasets, making
 
 ## Inferential Testing
 
-We conducted an inferential statistical test to determine whether there was a significant difference between the price distributions of men’s and women’s clothing items.
+We also conducted an inferential statistical test to determine whether there was a significant difference between the price distributions of men’s and women’s clothing items.
 
 * **Null Hypothesis (H₀):** There is no difference in the price distributions of men’s and women’s clothing items.
 * **Alternative Hypothesis (Hₐ):** Men’s clothing items have a higher price distribution than women’s clothing items.
