@@ -93,6 +93,17 @@ For jackets, jeans, shirts and trousers, the range of prices was higher for men,
 
 It is clear that most clothing categories did not have balanced datasets, making it difficult to draw strong conclusions. As mentioned previously, the jeans and blazers categories contained relatively small sample sizes compared to the other categories, which limits the reliability of the analysis for those groups.
 
+## Inferential Testing
+
+We conducted an inferential statistical test to determine whether there was a significant difference between the price distributions of men’s and women’s clothing items.
+
+* **Null Hypothesis (H₀):** There is no difference in the price distributions of men’s and women’s clothing items.
+* **Alternative Hypothesis (Hₐ):** Men’s clothing items have a higher price distribution than women’s clothing items.
+
+The test produced a p-value of **9.071820668370416e-10**, which is significantly smaller than the standard significance level of 0.05.
+
+Therefore, we reject the null hypothesis and conclude that there is strong statistical evidence suggesting that the prices of the selected men’s and women’s clothing categories do not come from the same population distribution. The results indicate that men’s clothing items in the selected Zara categories are statistically more expensive overall than women’s clothing items.
+
 ## Discussion and Conclusion
 Contrary to the “pink tax” assumption proposed at the beginning of this study, our analysis found that men’s apparel at Zara was often priced higher than comparable women’s items. For example, men’s blazers were, on average, more than $40 more expensive than women’s blazers. Men’s products also showed greater price variability and wider price ranges overall. Some men’s jackets exceeded $190, while no women’s jackets were priced above $130. More specifically, men’s jackets, shirts, trousers and blazers were generally more expensive than similar women’s products. In contrast, women’s items tended to have more concentrated and affordable pricing distributions with fewer extreme values. These findings challenge the assumption that women consistently pay a “pink tax” across clothing categories. However, the imbalance in the dataset across certain clothing categories may also have affected the comparison results and limited the reliability of some conclusions.
 
