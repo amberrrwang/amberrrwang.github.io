@@ -11,6 +11,9 @@ This is a data science and analytics project that uses historical Steam applicat
 
 The project was completed as part of the Big Data Analytics course at the University of Pennsylvania.
 
+## Project Motivation
+This project analyzes factors that influence game pricing and explores pricing strategies within the digital gaming market. By examining features such as genre, ratings, multiplayer support, release year and publisher characteristics, the project aims to understand how developers determine game prices. These insights can help developers set competitive prices for new releases while also helping consumers evaluate pricing fairness in the gaming market.
+
 ## Data Source
 The dataset is derived from publicly available Steam application metadata, containing records and over 70 features per game. Key variables include:
 - Pricing information (initial price, discounts)
@@ -19,3 +22,7 @@ The dataset is derived from publicly available Steam application metadata, conta
 - Platform and language support
 - Developer and publisher information
 - Extensive preprocessing was required to address missing values, high-cardinality categorical variables, skewed distributions and outliers commonly observed in game pricing data.
+
+## Data Preprocessing
+The datasets were cleaned by removing redundant columns, handling missing values and filtering incomplete records. Non-informative features such as timestamps, image links and columns with excessive missing values were dropped. Rows missing key variables, including game price and release information, were also removed. In addition, a genre mapping table was created to link each game with all associated genres for further pricing analysis.
+
