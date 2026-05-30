@@ -26,10 +26,28 @@ The dataset is derived from publicly available Steam application metadata, conta
 ## Data Preprocessing
 The datasets were cleaned by removing redundant columns, handling missing values and filtering incomplete records. Non-informative features such as timestamps, image links and columns with excessive missing values were dropped. Rows missing key variables, including game price and release information, were also removed. In addition, a genre mapping table was created to link each game with all associated genres for further pricing analysis.
 
-## Exploratory Data Analysis
+## Exploratory Data Analysis/ Data Overview
+### Distribution of Voted Up Reviews
+![Game Visual](/game-images/votes.png)
+
+The bar chart shows that most reviews are marked as “voted up,” meaning the majority of players gave a positive review. This imbalance reflects typical behavior on Steam, where satisfied users are more likely to leave feedback than dissatisfied ones.
+
+### Distribution of Reviews Language
+![Game Visual](/game-images/language.png)
+
+The distribution of review languages is highly imbalanced, with English dominating the dataset and Simplified Chinese and Russian following. The majority of remaining languages have fewer than 100,000 reviews, and many fall below 10,000. Thus we will later consolidate all languages with fewer than 10,000 reviews into a single category labeled “other” to reduce noise.
+
+#### Distribution of Comment Count
+![Game Visual](/game-images/comment-count.png)
+
+The distribution of comment counts is right-skewed, with a majority of reviews receiving little to no comments. The tall bar on the left shows that most reviews fall in the 0 - 10 comment range, even when plotted on a log scale. Overall, this indicates that meaningful discussion happens on only a tiny fraction of reviews.
 
 ## Feature Engineering
 
-## Models
+## Model
+### Linear Regression
+### CatBoost
+### XGBoost
+### Random Forest
 
 ## Conclusion and Discussion
