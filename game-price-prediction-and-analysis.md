@@ -145,7 +145,7 @@ To improve prediction performance, we applied hyperparameter tuning to both the 
 
 Overall, hyperparameter tuning significantly improved model performance across all three models. Among them, the tuned CatBoost model achieved the highest R² score, while the tuned Random Forest model produced the lowest prediction errors.
 
-### Exploring Feature Importance
+### Feature Importance Analysis
 ![Game Visual](/game-images/catboost.png)
 
 For the CatBoost model, `num_languages` is the strongest predictor of game price, followed by key genre-related features such as genre_31 and genre_122 (indicating the genres they belong to). Release characteristics (`release_year`, `release_month` and `updated_year`) also contribute significantly. Overall, the model relies most heavily on language availability, game identity and temporal and genre attributes to predict pricing.
@@ -180,9 +180,11 @@ The XGBoost feature importance results are similar to those observed in the Rand
 - External market factors such as publisher reputation, seasonal sales, promotional events, and competing game releases were not included.
 
 ## Business Implications
-- Core product attributes play a significant role in pricing decisions. Features such as language availability, genre, and release timing strongly influence game price, suggesting that developers and publishers should carefully consider these factors when positioning games in the market.
-- The models also help stakeholders better understand pricing distributions within the Steam marketplace, enabling more informed pricing decisions, anomaly detection, and exploration of alternative pricing strategies.
-
+- Core product attributes such as language availability, genre, and release timing were among the strongest predictors of game price, showing that pricing is heavily influenced by product positioning and lifecycle strategy.
+- Broader language support and certain genres were associated with higher price ranges, suggesting that market reach and genre expectations play an important role in pricing decisions.
+- In contrast, review engagement and player activity metrics were less influential, indicating that initial pricing is driven more by inherent game characteristics than by post-launch popularity.
+- These findings can help developers and publishers better understand pricing patterns within the Steam marketplace and support more informed pricing and positioning decisions.
+  
 ### Potential Improvements
 - Incorporate NLP-based features from game descriptions and user reviews.
 - Explore embedding-based methods for representing genres.
