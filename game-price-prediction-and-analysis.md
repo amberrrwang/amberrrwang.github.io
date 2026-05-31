@@ -62,7 +62,7 @@ The distribution of the currency is unbalanced as the USD consists of the majori
 #### Distribution of Price
 ![Game Visual](/game-images/price-frequency.png)
 
-The price distribution is heavily concentrated at low price points, with common pricing tiers like 1 - 5 dollars showing the highest frequencies. A noticeable spike also appears at 10 dollars, reflecting another popular pricing threshold. Beyond 15 dollars, the number of games drops sharply, showing that most Steam titles are priced under 20 dollars.
+The price distribution is heavily concentrated at low price points, with common pricing tiers like 1 - 5 dollars showing the highest frequencies. A noticeable spike also appears at 10 dollars, reflecting another popular pricing threshold. Beyond 15 dollars, the number of games drops sharply, showing that most Steam games are priced under 20 dollars.
 
 ### Genre-related Features
 #### Distribution of the Top Genres
