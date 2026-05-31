@@ -84,6 +84,14 @@ We applied Principal Component Analysis (PCA) to improve model efficiency and pe
 ### Baseline Model: Linear Regression
 - using StandardScaler to normalize all numeric features
 
+To evaluate the impact of dimensionality reduction, we compared model performance before and after applying PCA.
+
+| Model | MAE | RMSE | R² |
+|---|---|---|---|
+| Scaled Features Only | 8.49 | 14.99 | 0.246 |
+| PCA-Transformed Features | 8.51 | 15.12 | 0.232 |
+
+The results show that the model trained on scaled features without PCA slightly outperformed the PCA-transformed model across all evaluation metrics. While PCA reduced dimensionality and computational complexity, it also resulted in a small loss of predictive information. Thus the scaled-only dataset provided better overall prediction performance for game price estimation.
 
 ### CatBoost
 ### XGBoost
