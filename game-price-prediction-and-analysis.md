@@ -29,7 +29,7 @@ The datasets were cleaned by removing redundant columns, handling missing values
 ## Exploratory Data Analysis/ Data Overview
 ### Review-related Features
 #### Distribution of Voted Up Reviews
-![Game Visual](/game-images/votes.png)
+![Game Visual](/game-images/vote.png)
 
 The bar chart shows that most reviews are marked as “voted up,” meaning the majority of players gave a positive review. This imbalance reflects typical behavior on Steam, where satisfied users are more likely to leave feedback than dissatisfied ones.
 
