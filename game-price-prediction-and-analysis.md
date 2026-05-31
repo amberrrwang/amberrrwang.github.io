@@ -114,8 +114,48 @@ Random Forest has the best baseline performance, with an  𝑅2  of 0.78, highli
 These baseline results provide two key insights:
 - Tree-based ensemble methods significantly outperform linear modeling approaches.
 - PCA is not beneficial for models designed to learn nonlinear relationships.
-  
+
+## Hyperparameter Tuning
+To improve prediction performance, we applied hyperparameter tuning to both the CatBoost and Random Forest models to optimize their learning behavior and reduce prediction error (using the non-PCA features). In addition, we developed an XGBoost model to compare the performance of different ensemble learning approaches for game price prediction.
+
+### Final Modeling Results Comparison
+### CatBoost
+
+| Metric | Before Tuning | After Tuning |
+|---|---|---|
+| MAE | 5.595 | 3.5939 |
+| RMSE | 9.855 | 6.5427 |
+| R² | 0.674 | 0.8562 |
+
+### Random Forest
+
+| Metric | Before Tuning | After Tuning |
+|---|---|---|
+| MAE | 3.306 | 2.269 |
+| RMSE | 7.927 | 6.845 |
+| R² | 0.789 | 0.843 |
+
 ### XGBoost
 
+| Metric | Before Tuning | After Tuning |
+|---|---|---|
+| MAE | 5.108 | 3.818 |
+| RMSE | 9.008 | 7.447 |
+| R² | 0.727 | 0.814 |
+
+Overall, hyperparameter tuning significantly improved model performance across all three models. Among them, the tuned CatBoost model achieved the highest R² score, while the tuned Random Forest model produced the lowest prediction errors.
+
+### Exploring Feature Importance
+![Game Visual](/game-images/catboost.png)
+
+For the CatBoost model, `num_languages` is the strongest predictor of game price, followed by key genre-related features such as genre_31 and genre_122 (indicating the genres they belong to). Release characteristics (`release_year`, `release_month` and `updated_year`) also contribute significantly. Overall, the model relies most heavily on language availability, game identity and temporal and genre attributes to predict pricing.
+
+![Game Visual](/game-images/random-forest.png)
+
+For the Random Forest model, product-level attributes, especially the number of supported languages and specific genre indicators, are the strongest predictors of price. Temporal features such as release month/year and update history also play a meaningful role, while user-activity variables contribute less. This suggests that product characteristics and lifecycle timing drive price more than user engagement metrics.
+
+![Game Visual](/game-images/xgboost.png)
+
+The XGBoost feature importance results are similar to those observed in the Random Forest model, highlighting many of the same genre-related features and language counts as key predictors of price. This agreement across models increases confidence in the importance of these features.
 
 ## Conclusion and Discussion
