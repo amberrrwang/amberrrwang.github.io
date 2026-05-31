@@ -60,7 +60,7 @@ The majority of Steam applications in our dataset are classified as games, with 
 The distribution of the currency is unbalanced as the USD consists of the majority of the dataset, with all other currencies appearing at much lower frequencies. So, we would later convert all of the game prices into USD to make the computation and interpretation easier.
 
 #### Distribution of Price
-<img src="/game-images/price-currency.png" alt="Game Visual" width="750">
+<img src="/game-images/price-frequency.png" alt="Game Visual" width="750">
 
 The price distribution is heavily concentrated at low price points, with common pricing tiers like 1 - 5 dollars showing the highest frequencies. A noticeable spike also appears at 10 dollars, reflecting another popular pricing threshold. Beyond 15 dollars, the number of games drops sharply, showing that most Steam games are priced under 20 dollars.
 
