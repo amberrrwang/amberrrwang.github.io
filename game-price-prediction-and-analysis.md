@@ -49,7 +49,7 @@ The distribution of comment counts is right-skewed, with a majority of reviews r
 The weighted_vote_score is a 0 to 1 helpfulness metric, but the histogram shows that almost all reviews cluster tightly around 0.50. This is because Steam applies a Bayesian weighted scoring system that keeps low-vote reviews near a neutral value.
 
 ### Application-related Features
-#### Count of Types
+#### Distribution of Types
 ![Game Visual](/game-images/type.png)
 
 The majority of Steam applications in our dataset are classified as games, with nearly twice as many entries as DLCs. Music products make up only a very small fraction.
