@@ -189,3 +189,4 @@ The XGBoost feature importance results are similar to those observed in the Rand
 - Incorporate NLP-based features from game descriptions and user reviews.
 - Explore embedding-based methods for representing genres.
 - Include external market and publisher-related information to better capture real-world pricing behavior.
+- Expand the application into a decision-support system that helps product and project managers estimate and evaluate pricing strategies for new game releases.
