@@ -161,13 +161,12 @@ The XGBoost feature importance results are similar to those observed in the Rand
 ## Main Takeaways
 ### Model Performance
 - The best-performing model was the tuned CatBoost model, achieving a test R² score of 0.8562.
-- Hyperparameter tuning significantly improved all three models, with CatBoost showing the largest improvement, increasing R² from 0.674 to 0.8562 while substantially reducing prediction error.
-- PCA did not improve model performance for the selected models.
-- Tree-based ensemble methods clearly outperformed simpler models such as Linear Regression, suggesting that game pricing is influenced by nonlinear interactions, heterogeneous features, and complex market patterns.
-- Despite strong performance, some variance remains unexplained (R² ≈ 0.86), indicating that game pricing may also depend on external factors not included in the dataset, such as publisher reputation, marketing campaigns, or seasonal discounts.
+- While hyperparameter tuning significantly improved all three models, with CatBoost showing the largest improvement, PCA did not improve model performance for the selected models.
+- Tree-based ensemble methods clearly outperformed simpler models, suggesting that game pricing is influenced by nonlinear interactions, heterogeneous features and complex market patterns.
+- Despite strong performance, some variance remains unexplained (R² ≈ 0.86), indicating that game pricing may also depend on external factors not included in the dataset, such as publisher reputation, marketing campaigns or seasonal discounts.
 
 ### Feature Importance
-- Feature importance analysis showed that the strongest predictors of game price were product-level attributes such as supported language count, genre categories, and release or update timing.
+- The strongest predictors of game price were product-level attributes such as supported language count, genre categories, and release or update timing.
 - In contrast, review engagement and user activity metrics were less influential, suggesting that pricing is driven more by inherent game characteristics and lifecycle factors than by community popularity or player behavior.
 
 ### Factors That Improved Model Performance
@@ -175,15 +174,15 @@ The XGBoost feature importance results are similar to those observed in the Rand
 - These adjustments allowed the models to capture complex pricing relationships while reducing overfitting and improving generalization.
 
 ### Limitations
-- The models did not include contextual information such as game descriptions, review text, sentiment, or marketing-related features that may influence pricing.
+- The models did not include contextual information such as game descriptions, review text, sentiment or marketing-related features that may influence pricing.
 - Genre features were one-hot encoded, creating sparse data that may limit the model’s ability to capture similarities between related genres.
-- External market factors such as publisher reputation, seasonal sales, promotional events, and competing game releases were not included.
+- External market factors such as publisher reputation, seasonal sales, promotional events and competing game releases were not included.
 
 ## Business Implications
-- Core product attributes such as language availability, genre, and release timing were among the strongest predictors of game price, showing that pricing is heavily influenced by product positioning and lifecycle strategy.
+- Core product attributes such as language availability, genre and release timing were among the strongest predictors of game price, showing that pricing is heavily influenced by product positioning and lifecycle strategy.
 - Broader language support and certain genres were associated with higher price ranges, suggesting that market reach and genre expectations play an important role in pricing decisions.
 - In contrast, review engagement and player activity metrics were less influential, indicating that initial pricing is driven more by inherent game characteristics than by post-launch popularity.
-- These findings can help developers and publishers better understand pricing patterns within the Steam marketplace and support more informed pricing and positioning decisions.
+- These findings can help developers, publishers and managers better understand pricing patterns within the Steam marketplace and support more informed pricing and positioning decisions.
   
 ### Potential Improvements
 - Incorporate NLP-based features from game descriptions and user reviews.
