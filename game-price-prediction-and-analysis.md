@@ -146,15 +146,15 @@ To improve prediction performance, we applied hyperparameter tuning to both the 
 Overall, hyperparameter tuning significantly improved model performance across all three models. Among them, the tuned CatBoost model achieved the highest R² score, while the tuned Random Forest model produced the lowest prediction errors.
 
 ### Feature Importance Analysis
-<img src="/game-images/catboost.png" alt="Game Visual" width="750">
+![Game Visual](/game-images/catboost-pie.png)
 
 For the CatBoost model, `num_languages` is the strongest predictor of game price, followed by key genre-related features such as genre_31 and genre_122 (indicating the genres they belong to). Release characteristics (`release_year`, `release_month` and `updated_year`) also contribute significantly. Overall, the model relies most heavily on language availability, game identity and temporal and genre attributes to predict pricing.
 
-<img src="/game-images/random-forest.png" alt="Game Visual" width="750">
+![Game Visual](/game-images/random-forest-pie.png)
 
 For the Random Forest model, product-level attributes, especially the number of supported languages and specific genre indicators, are the strongest predictors of price. Temporal features such as release month/year and update history also play a meaningful role, while user-activity variables contribute less. This suggests that product characteristics and lifecycle timing drive price more than user engagement metrics.
 
-<img src="/game-images/xgboost.png" alt="Game Visual" width="750">
+![Game Visual](/game-images/xgboost-pie.png)
 
 The XGBoost feature importance results are similar to those observed in the Random Forest model, highlighting many of the same genre-related features and language counts as key predictors of price. This agreement across models increases confidence in the importance of these features.
 
