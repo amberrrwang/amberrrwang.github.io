@@ -93,8 +93,29 @@ To evaluate the impact of dimensionality reduction, we compared model performanc
 
 The results show that the model trained on scaled features without PCA slightly outperformed the PCA-transformed model across all evaluation metrics. While PCA reduced dimensionality and computational complexity, it also resulted in a small loss of predictive information. Thus the scaled-only dataset provided better overall prediction performance for game price estimation.
 
-### CatBoost
+### CatBoost Model
+- using the scaled feature set (non-PCA)
+
+| MAE | RMSE | R² |
+|---|---|---|
+| 5.595 | 9.855 | 0.674 |
+
+Performance improved substantially compared to Linear Regression, achieving an  𝑅2  of 0.674. This demonstrates that boosting-based tree models can capture more representation of pricing behavior.
+
+### Random Forest Model
+- using the scaled feature set (non-PCA)
+
+| MAE | RMSE | R² |
+|---|---|---|
+| 3.306 | 7.926 | 0.789 |
+
+Random Forest has the best baseline performance, with an  𝑅2  of 0.78, highlighting the importance of maintaining full feature dimensionality.
+
+These baseline results provide two key insights:
+- Tree-based ensemble methods significantly outperform linear modeling approaches.
+- PCA is not beneficial for models designed to learn nonlinear relationships.
+  
 ### XGBoost
-### Random Forest
+
 
 ## Conclusion and Discussion
