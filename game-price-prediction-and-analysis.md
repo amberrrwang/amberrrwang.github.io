@@ -146,7 +146,7 @@ To improve prediction performance, we applied hyperparameter tuning to both the 
 Overall, hyperparameter tuning significantly improved model performance across all three models. Among them, the tuned CatBoost model achieved the highest R² score, while the tuned Random Forest model produced the lowest prediction errors.
 
 ### Feature Importance Analysis
-![Game Visual](/game-images/catboost.png)
+<img src="/game-images/catboost.png" alt="Game Visual" width="500">
 
 For the CatBoost model, `num_languages` is the strongest predictor of game price, followed by key genre-related features such as genre_31 and genre_122 (indicating the genres they belong to). Release characteristics (`release_year`, `release_month` and `updated_year`) also contribute significantly. Overall, the model relies most heavily on language availability, game identity and temporal and genre attributes to predict pricing.
 
