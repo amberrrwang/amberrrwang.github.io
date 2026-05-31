@@ -28,12 +28,12 @@ The datasets were cleaned by removing redundant columns, handling missing values
 
 ## Exploratory Data Analysis/ Data Overview
 ### Review-related Features
-### Distribution of Voted Up Reviews
+#### Distribution of Voted Up Reviews
 ![Game Visual](/game-images/votes.png)
 
 The bar chart shows that most reviews are marked as “voted up,” meaning the majority of players gave a positive review. This imbalance reflects typical behavior on Steam, where satisfied users are more likely to leave feedback than dissatisfied ones.
 
-### Distribution of Reviews Language
+#### Distribution of Reviews Language
 ![Game Visual](/game-images/language.png)
 
 The distribution of review languages is highly imbalanced, with English dominating the dataset and Simplified Chinese and Russian following. The majority of remaining languages have fewer than 100,000 reviews, and many fall below 10,000. Thus we will later consolidate all languages with fewer than 10,000 reviews into a single category labeled “other” to reduce noise.
@@ -59,6 +59,11 @@ The majority of Steam applications in our dataset are classified as games, with 
 
 The distribution of the currency is unbalanced as the USD consists of the majority of the dataset, with all other currencies appearing at much lower frequencies. So, we would later convert all of the game prices into USD to make the computation and interpretation easier.
 
+#### Distribution of Price
+![Game Visual](/game-images/price-frequency.png)
+
+The price distribution is heavily concentrated at low price points, with common pricing tiers like 1 - 5 dollars showing the highest frequencies. A noticeable spike also appears at 10 dollars, reflecting another popular pricing threshold. Beyond 15 dollars, the number of games drops sharply, showing that most Steam titles are priced under 20 dollars.
+
 ### Genre-related Features
 #### Distribution of the Top Genres
 ![Game Visual](/game-images/genre.png)
@@ -74,7 +79,12 @@ The heat map shows that `mat_initial_price` does not show meaningful correlation
 Timestamp columns were converted into a datetime format, and additional numerical features such as release year and release month were extracted from time-related columns. Categorical variables were encoded into machine-readable formats. The target variable game price (`mat_initial_price`) was renamed to `price` and standardized to USD for consistency across currencies. Redundant or uninformative columns were removed, and the datasets were merged into a final integrated dataframe for analysis and prediction.
 
 ## Model
-### Linear Regression
+We applied Principal Component Analysis (PCA) to improve model efficiency and performance when working with a high-dimensional feature space. The dataset contains over 70 numerical and one-hot encoded features, so dimensionality reduction helps reduce feature redundancy, noise and multicollinearity. Before applying PCA, all features were standardized using StandardScaler. To determine the optimal number of principal components, we analyzed the cumulative explained variance across components. Based on the results, we selected 45 principal components, which preserved approximately 80% of the total variance in the dataset.
+
+### Baseline Model: Linear Regression
+- using StandardScaler to normalize all numeric features
+
+
 ### CatBoost
 ### XGBoost
 ### Random Forest
