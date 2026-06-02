@@ -35,4 +35,12 @@ Each item includes features such as:
 - Kept only the top 20 most frequent brands to simplify the model and reduce dimensionality.
 
 ## Exploratory Data Analysis
+### Distribution of Rating
+![Beauty Visual](/beauty-images/rating.png)
+The rating distribution is skewed toward higher values (skewed to the right), with most products receiving ratings above 4.0. This shows a strong positive bias in customer reviews, where the majority of products are rated favorably, suggesting that people are more likely to leave reviews if they like the product.
+
+![Beauty Visual](/beauty-images/rating-price.png)
+Ratings remain relatively high across all price ranges, with no clear trend as price increases. This suggests that higher-priced products do not necessarily deliver better customer satisfaction, and that product quality perception is relatively stable across different price tiers.
+
+![Beauty Visual](/beauty-images/average-rating.png)
 
