@@ -73,7 +73,7 @@ The marital status and race distributions show the demographic composition of th
 | Tuned XGB Best Accuracy | 0.721 |
 | Optimal Threshold | 0.747 |
 
-<img src="/datathon-images/top-xgboost.png" alt="Game Visual" width="750">
+<img src="/datathon-images/top-xgboost.png" alt="Game Visual" width="650">
 
 Since the baseline XGBoost model achieved only moderate predictive performance, we further examined the model’s feature importance scores to better understand which variables contributed most to prediction. This analysis helped identify the clinical and operational factors most associated with the target outcome and provided insight into potential areas for additional feature engineering and model improvement.
 
