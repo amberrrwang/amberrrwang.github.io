@@ -16,3 +16,23 @@ Sephora is one of the largest cosmetic retailers, offering a wide variety of bea
 
 This project aims to simplify the shopping process by helping users identify products that are likely to receive high ratings based on different features. Through data analysis and predictive modeling, the application makes product discovery more efficient and improves the overall shopping experience.
 
+## Data Source
+Cosmetic and skincare product data scraped from Sephora.
+
+Each item includes features such as:
+- brand
+- category
+- name
+- rating
+- number of reviews
+- marketing
+- selling channels
+- and more...
+
+## Data Cleaning
+- Removed unnecessary and highly text-based columns that were not relevant to the analysis and prediction tasks.
+- Applied one-hot encoding to categorical variables such as product category and brand.
+- Kept only the top 20 most frequent brands to simplify the model and reduce dimensionality.
+
+## Exploratory Data Analysis
+
