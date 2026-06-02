@@ -19,15 +19,15 @@ This project aims to simplify the shopping process by helping users identify pro
 ## Data Source
 Cosmetic and skincare product data scraped from Sephora.
 
-Each item includes features such as:
-- brand
-- category
-- name
-- rating
-- number of reviews
-- marketing
-- selling channels
-- and more...
+The dataset includes product features such as:
+- Brand
+- Category
+- Product name
+- Rating
+- Number of reviews
+- Marketing-related information
+- Selling channels
+- and other relevant product attributes relevant
 
 ## Data Cleaning
 - Removed unnecessary and highly text-based columns that were not relevant to the analysis and prediction tasks.
