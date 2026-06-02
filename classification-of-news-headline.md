@@ -20,6 +20,19 @@ and model training. The cleaning steps involved:
 4. **Handling Missing Data**: Any rows with missing or empty Title values after cleaning were removed to ensure data integrity.
 
 ## Model
+### BERT Variant Model Accuracies
+
+| Data Type          | BERT | RoBERTa |
+|-------------------|------:|---------:|
+| Unprocessed Title | 79.11 | 90.54 |
+| Processed Title   | 75.43 | 77.40 |
+
+### SVM Model Accuracies for Different Input Representations
+
+| Data Type          | BOW  | TF-IDF | BERT | Manual Features |
+|-------------------|------:|--------:|------:|-----------------:|
+| Unprocessed Title | 76.22 | 81.47 | 74.51 | - |
+| Processed Title   | 77.00 | 80.03 | 73.19 | 80.29 |
 
 ## Key Findings
 ### Final Model: BERT
