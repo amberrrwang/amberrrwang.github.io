@@ -40,11 +40,27 @@ The dataset includes product features such as:
 
 The rating distribution is skewed toward higher values (skewed to the right), with most products receiving ratings above 4.0. This shows a strong positive bias in customer reviews, where the majority of products are rated favorably, suggesting that people are more likely to leave reviews if they like the product.
 
+### Distribution of Rating by Price Range
 ![Beauty Visual](/beauty-images/rating-price.png)
 
 Ratings remain relatively high across all price ranges, with no clear trend as price increases. This suggests that higher-priced products do not necessarily deliver better customer satisfaction, and that product quality perception is relatively stable across different price tiers.
 
+### Brand and Category Analysis
 ![Beauty Visual](/beauty-images/average-rating.png)
 ![Beauty Visual](/beauty-images/top-categories.png)
 
 While there are slight variations in average ratings across brands and categories, the differences are relatively small, with most values clustered between 3.5 and 4.5. This suggests that no single factor strongly determines product ratings, showing the need for a multi-feature predictive model.
+
+### Exclusivity and Marketing Analysis
+![Beauty Visual](/beauty-images/exclusivity.png)
+
+There is no significant difference in rating distributions between exclusive and non-exclusive products, suggesting that exclusivity alone does not drive higher customer satisfaction.
+
+![Beauty Visual](/beauty-images/marketing.png)
+![Beauty Visual](/beauty-images/marketing2.png)
+
+Marketing flags show a limited impact on product ratings. While a simple comparison suggests slightly lower ratings for marketed products, a more detailed breakdown reveals that the effect varies by marketing type. This indicates that marketing does not consistently improve customer satisfaction and its impact is not uniform.
+
+### Distribution of Price
+![Beauty Visual](/beauty-images/price.png)
+
