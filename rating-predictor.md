@@ -84,5 +84,14 @@ In this project, products with ratings greater than or equal to 4.0 were initial
 | Logistic Regression | Rating ≥ 4.2 | 0.597 |
 | Random Forest | Rating ≥ 4.2 | 0.621 |
 
-The results show that the Random Forest model achieved the highest overall accuracy under both rating thresholds, suggesting that nonlinear relationships between product features may better explain product ratings.
+The results show that the Random Forest model achieved the highest overall accuracy under both rating thresholds, suggesting that nonlinear relationships between product features may better explain product ratings. As the rating threshold increased from 4.0 to 4.2, the model accuracy decreased because fewer products satisfied the “highly rated” condition, making the classification task more difficult and creating a more imbalanced dataset.
+
+### Feature Importance 
+![Beauty Visual](/beauty-images/feature4.png)
+![Beauty Visual](/beauty-images/feature4.2.png)
+
+The feature importance analysis from the Random Forest models shows that `number_of_reviews`, `love` and `price` were the most influential features in predicting highly rated products under both rating thresholds. `number_of_reviews` had the highest importance score, suggesting that products with greater customer engagement were more likely to receive high ratings. The `love` feature and `price` also played significant roles in the predictions. In comparison, marketing flags and category-related variables had relatively smaller impacts on model performance.
+
+The feature importance patterns remained similar across both the 4.0 and 4.2 thresholds, indicating consistent relationships between product popularity, customer engagement and ratings.
+
 ## Interactive Application
