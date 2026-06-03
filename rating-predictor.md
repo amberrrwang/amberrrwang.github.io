@@ -72,5 +72,17 @@ The price distribution is right-skewed, with the majority of products concentrat
 The correlation matrix shows that product ratings have weak relationships with individual features such as price, reviews and marketing indicators. While some features are strongly correlated with each other, none exhibit a strong direct relationship with ratings. This suggests that customer satisfaction is influenced by a combination of factors rather than any single attribute.
 
 ## Predictor Model
+In this project, products with ratings greater than or equal to 4.0 were initially classified as highly rated products. Two classification models were used in this project: Logistic Regression and Random Forest.
 
+### Model Performance
+
+| Model | Threshold | Accuracy |
+|---|---|---|
+| Logistic Regression | Rating ≥ 4.0 | 0.779 |
+| Logistic Regression (Class Weighted) | Rating ≥ 4.0 | 0.607 |
+| Random Forest | Rating ≥ 4.0 | 0.809 |
+| Logistic Regression | Rating ≥ 4.2 | 0.597 |
+| Random Forest | Rating ≥ 4.2 | 0.621 |
+
+The results show that the Random Forest model achieved the highest overall accuracy under both rating thresholds, suggesting that nonlinear relationships between product features may better explain product ratings.
 ## Interactive Application
