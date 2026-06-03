@@ -70,3 +70,7 @@ The price distribution is right-skewed, with the majority of products concentrat
 ![Beauty Visual](/beauty-images/correlation.png)
 
 The correlation matrix shows that product ratings have weak relationships with individual features such as price, reviews and marketing indicators. While some features are strongly correlated with each other, none exhibit a strong direct relationship with ratings. This suggests that customer satisfaction is influenced by a combination of factors rather than any single attribute.
+
+## Predictor Model
+
+## Interactive Application
