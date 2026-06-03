@@ -64,3 +64,9 @@ Marketing flags show a limited impact on product ratings. While a simple compari
 ### Distribution of Price
 ![Beauty Visual](/beauty-images/price.png)
 
+The price distribution is right-skewed, with the majority of products concentrated in lower price ranges and a small number of high-priced outliers. This suggests that most products in the dataset are relatively affordable, with only a limited number of premium-priced items.
+
+### Correlation Analysis
+![Beauty Visual](/beauty-images/correlation.png)
+
+The correlation matrix shows that product ratings have weak relationships with individual features such as price, reviews and marketing indicators. While some features are strongly correlated with each other, none exhibit a strong direct relationship with ratings. This suggests that customer satisfaction is influenced by a combination of factors rather than any single attribute.
