@@ -95,3 +95,16 @@ The feature importance result from the Random Forest models shows that `number_o
 The feature importance patterns remained similar across both the 4.0 and 4.2 thresholds, indicating consistent relationships between product popularity, customer engagement and ratings.
 
 ## Interactive Application
+
+## Business Implications
+### Customer Engagement as a Key Performance Driver
+The feature importance analysis indicates that the number of reviews and love count are the strongest predictors of highly rated products. This suggests that product popularity and customer engagement may play a larger role in predicting ratings than specific brand or category characteristics. However, one limitation of this analysis is that brand and category variables were one-hot encoded for modeling purposes, causing their influence to be distributed across multiple individual features. Thus, the feature importance scores do not fully capture the overall impact of brand or category on product ratings. Additional descriptive analysis showed only modest differences in average ratings across the top brands and categories. While these findings suggest that brand and category may be less influential than popularity-related metrics, further analysis would be needed to determine their true effect on product ratings.
+
+### Pricing and Product Positioning
+Price emerged as the third most important predictor of product ratings, indicating that customer satisfaction is closely tied to product positioning and perceived value. Rather than competing solely on price, brands can use these insights to evaluate whether products are aligned with customer expectations within their respective price segments and optimize pricing strategies accordingly. 
+
+### Inventory Planning
+The analysis suggests that products with strong customer engagement metrics are more likely to achieve higher ratings and potentially stronger market performance. Retailers can use these indicators to prioritize inventory allocation, promotional efforts and assortment decisions. Products demonstrating high engagement may warrant additional inventory support, while lower-engagement products can be reviewed for repositioning or inventory reduction.
+
+### Marketing Strategy
+Promotional attributes such as exclusive, online-only and limited-edition flags contributed relatively little to the model's predictions. This indicates that long-term customer satisfaction is driven more by product value and customer engagement than by promotional labels alone. As a result, marketing teams may achieve better outcomes by focusing on customer experience, product quality and community engagement rather than relying primarily on promotional tactics.
