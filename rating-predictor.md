@@ -100,7 +100,7 @@ The feature importance patterns remained similar across both the 4.0 and 4.2 thr
 - Implemented real-time rating predictions, allowing users to explore how product characteristics influence customer satisfaction and product performance.
 - Used the Random Forest Regressor to predict continuous rating values to make the output more interpretable (such as 3.7 instead of a binary 0/1 classification).
   
-<img src="/beauty-images/ui_1.png" alt="Beauty Visual" width="600">
+<img src="/beauty-images/ui_1.png" alt="Beauty Visual" width="500">
 <img src="/beauty-images/ui_2.png" alt="Beauty Visual" width="500">
 
 ## Business Implications
