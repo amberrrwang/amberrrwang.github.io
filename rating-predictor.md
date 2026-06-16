@@ -95,6 +95,13 @@ The feature importance result from the Random Forest models shows that `number_o
 The feature importance patterns remained similar across both the 4.0 and 4.2 thresholds, indicating consistent relationships between product popularity, customer engagement and ratings.
 
 ## Interactive Application
+- Developed an interactive application that enables users to estimate beauty product ratings based on product attributes including price, category, brand and marketing features.
+- Designed dynamic category-based dropdown menus that automatically update available brand options to create a more intuitive product selection experience.
+- Implemented real-time rating predictions, allowing users to explore how product characteristics influence customer satisfaction and product performance.
+- Used the Random Forest Regressor to predict continuous rating values to make the output more interpretable (such as 3.7 instead of a binary 0/1 classification).
+  
+![Beauty Visual](/beauty-images/ui_1.png)
+![Beauty Visual](/beauty-images/ui_2.png)
 
 ## Business Implications
 ### Customer Engagement as a Key Performance Driver
