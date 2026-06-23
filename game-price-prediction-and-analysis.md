@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Steam Applications Price Prediction and Analysis"
+title: "Game Price Prediction and Analysis"
 permalink: /game-price-prediction-and-analysis/
 ---
 
