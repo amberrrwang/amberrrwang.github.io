@@ -2,9 +2,9 @@
 layout: page
 title: "Beauty Product Rating Predictor"
 permalink: /beauty-product-rating-predictor/
+summary: "Developed a regression model and interactive Tkinter app to predict beauty product ratings from pricing, brand and category data."
+tags: [Python, Regression, EDA, Tkinter GUI]
 ---
-
-# Beauty Product Rating Predictor
 
 ## Abstract
 This project develops an interactive analytics and prediction tool using Sephora beauty product data. The application performs exploratory data analysis and visualizations to examine pricing trends and product performance across categories. The project also includes a machine learning model that predicts whether a product is likely to be highly rated based on features such as price, brand and category. A Tkinter GUI allows users to explore the dataset and generate rating predictions interactively.

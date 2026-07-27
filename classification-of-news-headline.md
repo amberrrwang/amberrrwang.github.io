@@ -2,9 +2,9 @@
 layout: page
 title: "Classification of News Headline"
 permalink: /classification-of-news-headline/
+summary: "Compared SVM and BERT-based models to classify news headlines by source, weighing accuracy against interpretability."
+tags: [NLP, BERT, SVM, Text Classification]
 ---
-
-# Classification of News Headline
 
 ## Abstract
 This project builds a text classification pipeline to predict the news source of a given headline, demonstrating an end-to-end NLP workflow including data preprocessing, feature extraction, model training and evaluation. Using a dataset of 3,805 headlines from Fox News and NBC News, we compared traditional machine learning and deep learning approaches, including Support Vector Machines (SVM) and BERT models. Preprocessing steps included text normalization, stopword removal and lemmatization.
@@ -26,6 +26,8 @@ and model training. The cleaning steps involved:
 |-------------------|------:|---------:|
 | Unprocessed Title | 79.11 | 90.54 |
 | Processed Title   | 75.43 | 77.40 |
+
+![BERT vs RoBERTa Accuracy](/news-images/bert-vs-roberta.png)
 
 ### SVM Model Accuracies for Different Input Representations
 

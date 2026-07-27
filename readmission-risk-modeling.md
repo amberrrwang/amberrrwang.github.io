@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Readmission Risk Modeling"
+title: "SmartDischarge: Early Prediction of ICU Readmission Risk"
 permalink: /readmission-risk-modeling/
+summary: "Built XGBoost models with SMOTE resampling to flag patients at risk of ICU readmission and support proactive discharge planning."
+tags: [Python, XGBoost, SMOTE, Healthcare Analytics]
 ---
-
-# SmartDischarge: Early Prediction of ICU Readmission Risk
 
 ## Abstract
 Unplanned ICU readmissions are a significant source of preventable harm, clinician burden and healthcare system cost. Nurses are often the first to sense that something’s not right, yet existing predictive models are sometimes not integrated into real clinical workflows.

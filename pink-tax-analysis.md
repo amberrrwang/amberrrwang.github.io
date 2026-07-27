@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Pink Tax Analysis"
+title: "Pink Tax Analysis: Gender-Based Pricing in Retail Clothing"
 permalink: /pink-tax-analysis/
+summary: "Tested whether women's clothing is systematically priced higher than men's across Zara categories using statistical hypothesis testing."
+tags: [Statistical Analysis, Hypothesis Testing, Data Visualization]
 ---
-
-# Pink Tax Analysis: Gender-Based Pricing in Retail Clothing
 
 ## Abstract
 This project analyzes gender-based pricing differences (commonly referred to as the “pink tax”) in retail clothing using real-world data from Zara. The goal is to examine whether women’s clothing is systematically priced higher than men’s clothing across different product categories and to understand how pricing patterns vary by category and dataset composition.

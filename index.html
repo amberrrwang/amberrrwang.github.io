@@ -1,211 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Amber's Portfolio</title>
+---
+layout: default
+title: Amber Wang
+summary: >-
+  Data-driven analyst with experience in business analytics, supply chain
+  operations and process optimization. Portfolio of data analytics, machine
+  learning and business intelligence projects.
+---
 
-  <style>
-    body {
-      font-family: Georgia, serif;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 30px 24px 70px;
-      background: linear-gradient(to bottom right, #fff0f6, #f3e8ff);
-      color: #2f2f2f;
-    }
+<section class="hero section" id="about" data-nav-section="about">
+  <div class="photo reveal">
+    <img src="/images/profile.JPG" alt="Amber Wang">
+  </div>
 
-    nav {
-      text-align: right;
-      margin-bottom: 55px;
-    }
+  <div class="intro reveal">
+    <p class="eyebrow">Data &amp; Business Analyst</p>
+    <h1>Hello! I am Amber Wang.</h1>
 
-    nav a {
-      margin-left: 28px;
-      text-decoration: none;
-      color: #4b4453;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      font-size: 14px;
-      letter-spacing: 1px;
-    }
+    <p class="lede">
+      I am a data-driven analyst with experience in business analytics, supply chain operations and process optimization.
+      I recently completed my Master's degree in Systems Engineering at the University of Pennsylvania. Through internships and projects, I have gained experience in data analytics, predictive modeling, inventory planning, financial analysis and data-driven decision-making. I enjoy transforming complex data into actionable insights that improve processes, support strategic planning and drive operational efficiency.
+    </p>
 
-    nav a:hover {
-      color: #9d4edd;
-    }
-
-    .hero {
-      display: flex;
-      align-items: center;
-      gap: 60px;
-      margin-bottom: 80px;
-    }
-
-    .photo img {
-      width: 320px;
-      border-radius: 18px;
-      box-shadow: 0 6px 20px rgba(157, 78, 221, 0.2);
-    }
-
-    .intro {
-      flex: 1;
-    }
-
-    h1 {
-      font-size: 46px;
-      line-height: 1.18;
-      color: #1f1f1f;
-      margin-bottom: 28px;
-      font-weight: normal;
-    }
-
-    .intro p {
-      font-family: Arial, sans-serif;
-      font-size: 18px;
-      line-height: 1.7;
-      color: #4b4453;
-      margin-bottom: 22px;
-    }
-
-    h2 {
-      font-family: Arial, sans-serif;
-      margin-top: 45px;
-      color: #9d4edd;
-      font-size: 26px;
-      letter-spacing: 1px;
-    }
-
-    .buttons {
-      margin-top: 28px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin-right: 14px;
-      padding: 12px 18px;
-      border-radius: 999px;
-      background: #ffffff;
-      color: #9d4edd;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      box-shadow: 0 4px 14px rgba(157, 78, 221, 0.15);
-    }
-
-    .buttons a:hover {
-      background: #9d4edd;
-      color: white;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 18px;
-      margin-bottom: 55px;
-      font-family: Arial, sans-serif;
-    }
-
-    .skills span {
-      background: rgba(255, 255, 255, 0.85);
-      padding: 10px 14px;
-      border-radius: 999px;
-      box-shadow: 0 4px 14px rgba(157, 78, 221, 0.12);
-    }
-
-    .projects {
-      display: grid;
-      gap: 18px;
-      margin-top: 20px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.85);
-      padding: 24px;
-      border-radius: 16px;
-      box-shadow: 0 4px 14px rgba(157, 78, 221, 0.15);
-      transition: transform 0.2s ease;
-      font-family: Arial, sans-serif;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-    }
-
-    .card a {
-      font-size: 20px;
-      font-weight: bold;
-      color: #b5179e;
-      text-decoration: none;
-    }
-
-    .card a:hover {
-      color: #7209b7;
-    }
-
-    .card p {
-      margin-bottom: 0;
-      color: #4b4453;
-      line-height: 1.5;
-    }
-
-    @media (max-width: 800px) {
-      .hero {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .photo img {
-        width: 100%;
-        max-width: 360px;
-      }
-
-      h1 {
-        font-size: 34px;
-      }
-
-      nav {
-        text-align: left;
-      }
-
-      nav a {
-        margin-left: 0;
-        margin-right: 18px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <nav>
-    <a href="#about">ABOUT</a>
-    <a href="#skills">SKILLS</a>
-    <a href="#projects">PROJECTS</a>
-    <a href="mailto:amberrrwang13@gmail.com">CONTACT</a>
-  </nav>
-
-  <section class="hero" id="about">
-    <div class="photo">
-      <img src="images/profile.JPG" alt="Amber Wang">
+    <div class="buttons">
+      <a href="https://www.linkedin.com/in/amberrrwang/">LinkedIn</a>
+      <a href="https://github.com/amberrrwang">GitHub</a>
     </div>
+  </div>
+</section>
 
-    <div class="intro">
-      <h1>Hello! I am Amber Wang.</h1>
+<section class="section" id="skills" data-nav-section="skills">
+  <h2 class="reveal">Skills</h2>
 
-      <p>
-        I am a data-driven analyst with experience in business analytics, supply chain operations and process optimization.
-        I recently completed my Master's degree in Systems Engineering at the University of Pennsylvania. Through internships and projects,I have gained experience in data analytics, predictive modeling, inventory planning, financial analysis and data-driven decision-making. I enjoy transforming complex data into actionable insights that improve processes, support strategic planning and drive operational efficiency. 
-      </p>
-
-      <div class="buttons">
-        <a href="https://www.linkedin.com/in/amberrrwang/">LinkedIn</a>
-        <a href="https://github.com/amberrrwang">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <h2 id="skills">Skills</h2>
-
-  <div class="skills">
+  <div class="skills reveal">
     <span>Python</span>
     <span>SQL</span>
     <span>R</span>
@@ -217,35 +43,60 @@
     <span>Supply Chain Analytics</span>
     <span>Process Improvement</span>
   </div>
+</section>
 
-  <h2 id="projects">Projects</h2>
+<section class="section" id="projects" data-nav-section="projects">
+  <h2 class="reveal">Projects</h2>
 
   <div class="projects">
-    <div class="card">
-      <a href="/game-price-prediction-and-analysis/">Game Price Prediction and Analysis</a>
-      <p>Analyzed Steam application and review data to identify pricing patterns and build predictive models.</p>
-    </div>
+    <a class="card reveal" href="/game-price-prediction-and-analysis/">
+      <div class="thumb"><img src="/game-images/xgboost-bar.png" alt="Feature importance chart from the game price prediction model"></div>
+      <div class="card-body">
+        <div class="tags"><span>Python</span><span>XGBoost</span><span>CatBoost</span></div>
+        <h3>Game Price Prediction and Analysis</h3>
+        <p>Analyzed Steam application and review data to identify pricing patterns and build predictive models.</p>
+        <span class="card-link">View case study <span class="arrow">&rarr;</span></span>
+      </div>
+    </a>
 
-    <div class="card">
-      <a href="/beauty-product-rating-predictor/">Beauty Product Rating Predictor</a>
-      <p>Developed regression models to predict beauty product ratings and analyzed customer behavior.</p>
-    </div>
-    
-    <div class="card">
-      <a href="/pink-tax-analysis/">Pink Tax Analysis</a>
-      <p>Explored pricing differences across Zara product categories using statistical analysis and data visualization.</p>
-    </div>
+    <a class="card reveal" href="/beauty-product-rating-predictor/">
+      <div class="thumb"><img src="/beauty-images/rating-price.png" alt="Rating versus price chart from the beauty product analysis"></div>
+      <div class="card-body">
+        <div class="tags"><span>Python</span><span>Regression</span><span>EDA</span></div>
+        <h3>Beauty Product Rating Predictor</h3>
+        <p>Developed regression models to predict beauty product ratings and analyzed customer behavior.</p>
+        <span class="card-link">View case study <span class="arrow">&rarr;</span></span>
+      </div>
+    </a>
 
-    <div class="card">
-      <a href="/readmission-risk-modeling/">Readmission Risk Modeling</a>
-      <p>Built machine learning models to identify patient readmission risk and support proactive care planning.</p>
-    </div>
+    <a class="card reveal" href="/pink-tax-analysis/">
+      <div class="thumb"><img src="/images/mean-price.png" alt="Mean price comparison chart from the pink tax analysis"></div>
+      <div class="card-body">
+        <div class="tags"><span>Statistics</span><span>Hypothesis Testing</span></div>
+        <h3>Pink Tax Analysis</h3>
+        <p>Explored pricing differences across Zara product categories using statistical analysis and data visualization.</p>
+        <span class="card-link">View case study <span class="arrow">&rarr;</span></span>
+      </div>
+    </a>
 
-    <div class="card">
-      <a href="/classification-of-news-headline/">Classification of News Headline</a>
-      <p>Applied NLP and machine learning models to classify news headlines by source.</p>
-    </div>
+    <a class="card reveal" href="/readmission-risk-modeling/">
+      <div class="thumb"><img src="/datathon-images/top-xgboost.png" alt="Feature importance chart from the ICU readmission risk model"></div>
+      <div class="card-body">
+        <div class="tags"><span>Python</span><span>XGBoost</span><span>SMOTE</span></div>
+        <h3>Readmission Risk Modeling</h3>
+        <p>Built machine learning models to identify patient readmission risk and support proactive care planning.</p>
+        <span class="card-link">View case study <span class="arrow">&rarr;</span></span>
+      </div>
+    </a>
+
+    <a class="card reveal" href="/classification-of-news-headline/">
+      <div class="thumb"><img src="/news-images/bert-vs-roberta.png" alt="BERT vs RoBERTa accuracy comparison chart"></div>
+      <div class="card-body">
+        <div class="tags"><span>NLP</span><span>BERT</span><span>SVM</span></div>
+        <h3>Classification of News Headline</h3>
+        <p>Applied NLP and machine learning models to classify news headlines by source.</p>
+        <span class="card-link">View case study <span class="arrow">&rarr;</span></span>
+      </div>
+    </a>
   </div>
-
-</body>
-</html>
+</section>

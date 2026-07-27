@@ -1,0 +1,12 @@
+title: Amber Wang
+description: >-
+  Data-driven analyst portfolio showcasing business analytics, supply chain
+  and data science projects by Amber Wang.
+url: "https://amberrrwang.github.io"
+markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
