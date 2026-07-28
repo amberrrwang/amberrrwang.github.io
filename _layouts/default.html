@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} | Amber Wang{% else %}{{ site.title }} | Data & Business Analyst Portfolio{% endif %}</title>
+  <title>{% if page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{{ page.title }} | Amber Wang{% else %}{{ site.title }} | Data & Business Analyst Portfolio{% endif %}</title>
   <meta name="description" content="{{ page.summary | default: site.description }}">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} | Amber Wang{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:title" content="{% if page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{{ page.title }} | Amber Wang{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{{ page.summary | default: site.description }}">
   <meta property="og:image" content="{{ site.url }}/images/profile.JPG">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
