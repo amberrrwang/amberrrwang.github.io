@@ -11,6 +11,6 @@ This is a time series demand forecasting project that uses 5 years of historical
 
 ## Key Question
 This project set out to answer three core questions:
-1. Which forecasting approach — a naive seasonal baseline, Prophet, or XGBoost — produces the most accurate demand forecasts across 500 store-item combinations?
-2. What features drive short-term demand the most: recent sales momentum, calendar effects (day of week, month), or long-term seasonality (same period last year)?
+1. Which forecasting approach, seasonal baseline, Prophet or XGBoost, produces the most accurate demand forecasts across 500 store-item combinations?
+2. What features drive short-term demand the most: recent sales momentum, calendar effects (day of week, month) or long-term seasonality (same period last year)?
 3. Do individual stores and items require separate models, or can a single global model capture shared demand patterns across locations and products?
