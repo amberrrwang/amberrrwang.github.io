@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "emand Forecasting Challenge"
+title: "Demand Forecasting Challenge"
 permalink: /demand-forecasting-challenge/
-Built and compared Naive Baseline, Prophet and XGBoost models on 5 years of store-item level retail sales data to forecast future demand. 
+summary: "Built and compared Naive Baseline, Prophet and XGBoost models on 5 years of store-item level retail sales data to forecast future demand."
 tags: [Python, Prophet, XGBoost, Time Series, Feature Engineering, Forecasting]
 ---
 
