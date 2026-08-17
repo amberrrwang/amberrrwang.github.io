@@ -29,4 +29,45 @@ The dataset explicitly excludes holiday effects and store closures, so all obser
 
 ## Exploratory Data Analysis
 
+### Overall Sales Trend
+
+![Total Daily Sales](demand-images/total_sales.png)
+*  Clear annual growth trend: each year’s peak is higher than the previous year’s, increasing from around 33,000 in 2013 to about 45,000 in 2017.
+*  Strong seasonality: the same pattern repeats every year, which sales are lower at the beginning of the year, rise sharply during the summer and decline again toward the end of the year. This creates a  consistent one-year cycle.
+*  Short-term zigzag fluctuations: these may reflect a day-of-week effect, such as higher sales on weekends than on weekdays. We can further decompose the data later to verify whether this pattern is indeed driven by weekly seasonality.
+*  
+### Seasonal Decomposition
+
+![Seasonal Decomposition](demand-images/total_decomp.png)
+*   Trend: after removing short-term fluctuations, we focus only on the overall direction. The trend line rises steadily from 22,000 in 2013 to about 29,000 in 2017. This suggests that the business itself is growing over time. The increase is not caused by seasonality.
+*   Seasonal: this represents the fixed pattern that repeats every year. The values fluctuate regularly between roughly -10,000 and +10,000, with one cycle each year. This suggests that sales are naturally higher in the summer and lower in the winter. It is a predictable seasonal pattern rather than random variation.
+*   Resid/residual: after removing both the trend and seasonal components, this is the variation that remains unexplained. The residuals appear to stay roughly between -5,000 and +5,000, without getting wider or narrower over time. Overall, they look relatively stable, with no obvious unusual pattern.
+
+### Day-of-Week Effect
+
+![Average Sales by Day of Week](demand-images/avg_sales.png)
+Day-of-week effect:
+*   Monday (0) has the lowest sales, at around 41.
+*   Sales increase steadily from Monday through Sunday, with Friday, Saturday and Sunday (4, 5, 6) showing noticeably higher sales.
+*   Sunday (6) has the highest sales of the week, at around 62 — nearly 50% higher than Monday.
+
+### Store-Level Comparison
+
+![Total Sales by Store](demand-images/total_by_store.png)
+*  Store 2 has the highest sales, while Store 7 has the lowest.
+*  There are noticeable differences across stores, but the gaps are not large enough to justify building a separate model for each store.
+*  Instead, store should be included as a feature in the model so it can account for store-level differences.
+
+### Item-Level Comparison
+
+![Top 10 Items by Total Sales](demand-images/top_items.png)
+*   The top 10 items have relatively similar sales levels, with no clear 80/20 concentration effect.
+*   This suggests that sales are fairly evenly distributed across items, rather than being driven primarily by a small number of best-selling products.
+
+### Store x Item Interaction
+
+![Store x Item Heatmap](demand-images/heatmap.png)
+*   There is clear horizontal banding: the same items show very similar sales patterns across different stores. For example, Items 15 and 28 consistently have higher sales across nearly all stores.
+*   This suggests that item popularity is largely consistent across locations, with no strong evidence of distinct regional preferences.
+*   The main differences are driven by the overall sales level of each store, rather than differences in which items customers prefer.
 
