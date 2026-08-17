@@ -35,7 +35,7 @@ The dataset explicitly excludes holiday effects and store closures, so all obser
 *  Clear annual growth trend: each year’s peak is higher than the previous year’s, increasing from around 33,000 in 2013 to about 45,000 in 2017.
 *  Strong seasonality: the same pattern repeats every year, which sales are lower at the beginning of the year, rise sharply during the summer and decline again toward the end of the year. This creates a  consistent one-year cycle.
 *  Short-term zigzag fluctuations: these may reflect a day-of-week effect, such as higher sales on weekends than on weekdays. We can further decompose the data later to verify whether this pattern is indeed driven by weekly seasonality.
-*  
+  
 ### Seasonal Decomposition
 
 ![Seasonal Decomposition](demand-images/total_decomp.png)
