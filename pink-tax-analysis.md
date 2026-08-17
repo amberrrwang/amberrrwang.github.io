@@ -3,7 +3,7 @@ layout: page
 title: "Pink Tax Analysis: Gender-Based Pricing in Retail Clothing"
 permalink: /pink-tax-analysis/
 summary: "Tested whether women's clothing is systematically priced higher than men's across Zara categories using statistical hypothesis testing."
-tags: [Statistical Analysis, Hypothesis Testing, Data Visualization]
+tags: [Python, Statistical Analysis, Hypothesis Testing, Data Visualization]
 ---
 
 ## Abstract
