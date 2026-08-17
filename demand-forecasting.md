@@ -48,26 +48,20 @@ Average sales rise steadily across the week, from about 41 units on Mondays (day
 ### Store-Level Comparison
 
 ![Total Sales by Store](demand-images/total_by_store.png)
-*  Store 2 has the highest sales, while Store 7 has the lowest.
-*  There are noticeable differences across stores, but the gaps are not large enough to justify building a separate model for each store.
-*  Instead, store should be included as a feature in the model so it can account for store-level differences.
+Total sales range from about 6.1 million units at the top-performing store (Store 2) down to about 3.3 million at the lowest (Store 7), a gap of roughly 1.8x. The drop-off between stores is gradual rather than sharp, so there isn't a natural cutoff point separating "high" and "low" performing stores. As shown earlier, each store follows the same seasonal and weekly pattern, meaning the difference between stores comes down to overall scale rather than a different sales pattern.
 
 ![Total Sales by Store](demand-images/sales_trend.png)
-*  The curves for all 10 stores are nearly identical in shape, showing the same seasonality and overall growth trend, with the main difference being their sales levels (magnitude).
-*  This suggests that the seasonal patterns and time trends are shared across stores, so there is no need to model seasonality separately for each store.
+Plotting each store's daily sales over time confirms why: the curves for all 10 stores are nearly identical in shape, tracking the same seasonal cycle and overall growth trend. The only meaningful difference between stores is their sales level, not their pattern. This means seasonality and trend can be modeled once and shared across stores, rather than fit separately for each one — a key reason for choosing a single global model over 10 store-specific models later on.
 
 ### Item-Level Comparison
 
 ![Top 10 Items by Total Sales](demand-images/top_items.png)
-*   The top 10 items have relatively similar sales levels, with no clear 80/20 concentration effect.
-*   This suggests that sales are fairly evenly distributed across items, rather than being driven primarily by a small number of best-selling products.
+The top 10 items range from about 1.61 million units (Item 15, the highest) down to about 1.41 million units (Item 8, the lowest), a gap of only 14%, much narrower than the 1.8x spread seen across stores. There is no clear 80/20 concentration effect where a handful of items dominate total sales; instead, demand is fairly evenly distributed across the top-selling items. This suggests inventory risk is spread across a broad product base rather than concentrated in a small number of bestsellers that would need outsized safety stock.
 
 ### Store x Item Interaction
 
 ![Store x Item Heatmap](demand-images/heatmap.png)
-*   There is clear horizontal banding: the same items show very similar sales patterns across different stores. For example, Items 15 and 28 consistently have higher sales across nearly all stores.
-*   This suggests that item popularity is largely consistent across locations, with no strong evidence of distinct regional preferences.
-*   The main differences are driven by the overall sales level of each store, rather than differences in which items customers prefer.
+The heatmap shows consistent vertical banding across all 10 stores, meaning the same items are consistently strong or weak sellers regardless of location (for example, Items 15 and 28 are dark across every row, while Item 1 stays light across every row). If regional preference played a meaningful role, this pattern would break down into more of a checkerboard, with different items standing out in different stores. Instead, item popularity is a store-independent property of the item itself. Combined with the store-level finding above, this confirms that both seasonality and item preference are shared across stores, reinforcing the decision to train a single global model rather than separate models per store or per item.
 
 ## Forecasting Models
 ### Baseline: Naive Seasonal Baseline
