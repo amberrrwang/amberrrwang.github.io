@@ -94,8 +94,6 @@ The decomposition confirms Prophet is capturing the same patterns identified in 
 
 ### Model 3: XGBoost
 A single global gradient-boosted tree model trained across all 500 store-item combinations at once, using engineered calendar, lag and rolling-average features along with store and item as categorical inputs.
-
-![Prophet Components](demand-images/feature_im.png)
  
 **MAPE: 13.03%** | **RMSE: 7.67**
 
@@ -108,3 +106,8 @@ A single global gradient-boosted tree model trained across all 500 store-item co
 | **XGBoost** | **13.03%** | **7.67** |
 
 XGBoost achieved the best performance on both metrics, improving MAPE by 44% and RMSE by 49% relative to the baseline, and modestly outperforming Prophet on both metrics. This is consistent with the EDA finding that seasonality and item popularity patterns are shared across stores — a single global model with store/item as features can learn from the full dataset at once, rather than fitting 500 independent models as Prophet does.
+
+### Feature Importance Analysis
+![Prophet Components](demand-images/feature_im.png)
+
+The 7-day lag and 7-day rolling average dominated feature importance, together accounting for the large majority of the model's predictive power, far outweighing calendar features like month or year and even the 365-day lag. Day of week ranked next, consistent with the weekly seasonality observed in EDA. Store and item ID contributed minimally on their own, since their effect is already captured indirectly through each series' own lag and rolling features.
