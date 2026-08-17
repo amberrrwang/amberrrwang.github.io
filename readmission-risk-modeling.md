@@ -3,7 +3,7 @@ layout: page
 title: "SmartDischarge: Early Prediction of ICU Readmission Risk"
 permalink: /readmission-risk-modeling/
 summary: "Built XGBoost models with SMOTE resampling to flag patients at risk of ICU readmission and support proactive discharge planning."
-tags: [Python, XGBoost, SMOTE, Healthcare Analytics]
+tags: [Python, XGBoost, SMOTE, Feature Engineering, Healthcare Analytics, Operational Planning]
 ---
 
 ## Abstract
