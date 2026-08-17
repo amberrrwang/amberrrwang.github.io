@@ -76,6 +76,35 @@ Day-of-week effect:
 *   The main differences are driven by the overall sales level of each store, rather than differences in which items customers prefer.
 
 ## Forecasting Models
-### Baseline: Naive Forecast
+### Baseline: Naive Seasonal Baseline
+Forecasts each day's sales as equal to the same day one year prior, providing a minimum performance bar with no statistical modeling involved.
+
+**MAPE: 23.42%** | **RMSE: 14.96**
+
 ### Model 2: Prophet
+An additive time series model fit independently for each of the 500 store-item combinations, automatically decomposing each series into trend, weekly seasonality, and yearly seasonality.
+
+![Prophet Forecast](demand-images/prophet.png)
+
+![Prophet Components](demand-images/prophet_components.png)
+
+The decomposition confirms Prophet is capturing the same patterns identified in EDA: a steady upward trend, a weekly cycle peaking on Sundays, and a yearly cycle peaking in summer.
+
+**MAPE: 14.15%** | **RMSE: 8.26**
+
 ### Model 3: XGBoost
+A single global gradient-boosted tree model trained across all 500 store-item combinations at once, using engineered calendar, lag and rolling-average features along with store and item as categorical inputs.
+
+![Prophet Components](demand-images/feature_im.png)
+ 
+**MAPE: 13.03%** | **RMSE: 7.67**
+
+### Model Comparison
+
+| Model | MAPE | RMSE |
+|---|---|---|
+| Seasonal Naive Baseline | 23.42% | 14.96 |
+| Prophet (all 500 combinations) | 14.15% | 8.26 |
+| **XGBoost** | **13.03%** | **7.67** |
+
+XGBoost achieved the best performance on both metrics, improving MAPE by 44% and RMSE by 49% relative to the baseline, and modestly outperforming Prophet on both metrics. This is consistent with the EDA finding that seasonality and item popularity patterns are shared across stores — a single global model with store/item as features can learn from the full dataset at once, rather than fitting 500 independent models as Prophet does.
