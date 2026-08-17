@@ -58,6 +58,10 @@ Day-of-week effect:
 *  There are noticeable differences across stores, but the gaps are not large enough to justify building a separate model for each store.
 *  Instead, store should be included as a feature in the model so it can account for store-level differences.
 
+![Total Sales by Store](demand-images/sales_trend.png)
+*  The curves for all 10 stores are nearly identical in shape, showing the same seasonality and overall growth trend, with the main difference being their sales levels (magnitude).
+*  This suggests that the seasonal patterns and time trends are shared across stores, so there is no need to model seasonality separately for each store.
+
 ### Item-Level Comparison
 
 ![Top 10 Items by Total Sales](demand-images/top_items.png)
@@ -71,3 +75,7 @@ Day-of-week effect:
 *   This suggests that item popularity is largely consistent across locations, with no strong evidence of distinct regional preferences.
 *   The main differences are driven by the overall sales level of each store, rather than differences in which items customers prefer.
 
+## Forecasting Models
+### Baseline: Naive Forecast
+### Model 2: Prophet
+### Model 3: XGBoost
