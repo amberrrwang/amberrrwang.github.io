@@ -32,24 +32,18 @@ The dataset explicitly excludes holiday effects and store closures, so all obser
 ### Overall Sales Trend
 
 ![Total Daily Sales](demand-images/total_sales.png)
-*  Clear annual growth trend: each year’s peak is higher than the previous year’s, increasing from around 33,000 in 2013 to about 45,000 in 2017.
-*  Strong seasonality: the same pattern repeats every year, which sales are lower at the beginning of the year, rise sharply during the summer and decline again toward the end of the year. This creates a  consistent one-year cycle.
-*  Short-term zigzag fluctuations: these may reflect a day-of-week effect, such as higher sales on weekends than on weekdays. We can further decompose the data later to verify whether this pattern is indeed driven by weekly seasonality.
+Total daily sales across all stores and items rose from a range of roughly 12,000–17,000 units in early 2013 to 17,000–27,000 units by late 2017. This shows a clear multi-year upward trend, also a strong, repeating annual cycle: sales peak each summer (reaching ~40,000–45,000 units by 2016–2017) and trough each winter (~15,000–17,000 units), with the amplitude of these seasonal swings also growing year over year alongside the overall trend.
   
 ### Seasonal Decomposition
 
 ![Seasonal Decomposition](demand-images/total_decomp.png)
-*   Trend: after removing short-term fluctuations, we focus only on the overall direction. The trend line rises steadily from 22,000 in 2013 to about 29,000 in 2017. This suggests that the business itself is growing over time. The increase is not caused by seasonality.
-*   Seasonal: this represents the fixed pattern that repeats every year. The values fluctuate regularly between roughly -10,000 and +10,000, with one cycle each year. This suggests that sales are naturally higher in the summer and lower in the winter. It is a predictable seasonal pattern rather than random variation.
-*   Resid/residual: after removing both the trend and seasonal components, this is the variation that remains unexplained. The residuals appear to stay roughly between -5,000 and +5,000, without getting wider or narrower over time. Overall, they look relatively stable, with no obvious unusual pattern.
+Decomposing the series into trend, seasonal, and residual components isolates what the raw sales chart only shows visually. The trend component confirms a steady, near-linear increase in baseline demand, rising from roughly 22,000 units in early 2013 to nearly 30,000 units by late 2017. The seasonal component captures a consistent annual cycle of about ±10,000 units around that trend, peaking mid-year and troughing in January. This cycle stays essentially constant in shape and amplitude across all five years, which indicates that the growing seasonal swings visible in the raw sales chart were actually driven by the rising trend, not by seasonality itself intensifying. The residuals show no systematic pattern or widening spread over time, suggesting that an additive decomposition is an appropriate fit for this data.
 
 ### Day-of-Week Effect
 
 ![Average Sales by Day of Week](demand-images/avg_sales.png)
 Day-of-week effect:
-*   Monday (0) has the lowest sales, at around 41.
-*   Sales increase steadily from Monday through Sunday, with Friday, Saturday and Sunday (4, 5, 6) showing noticeably higher sales.
-*   Sunday (6) has the highest sales of the week, at around 62 — nearly 50% higher than Monday.
+Average sales rise steadily across the week, from about 41 units on Mondays (dayofweek = 0) to about 62 units on Sundays (dayofweek = 6), an increase of roughly 50%. The climb is fairly gradual through midweek before accelerating into the weekend, with Friday, Saturday, and Sunday consistently the highest-selling days. This pattern is stable enough to be a reliable predictive signal rather than noise, which is confirmed later by its ranking in the XGBoost feature importance results.
 
 ### Store-Level Comparison
 
