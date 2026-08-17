@@ -3,11 +3,14 @@ layout: page
 title: "Demand Forecasting Challenge"
 permalink: /demand-forecasting-challenge/
 summary: "Built and compared Naive Baseline, Prophet and XGBoost models on 5 years of store-item level retail sales data to forecast future demand."
-tags: [Python, Prophet, XGBoost, Time Series, Feature Engineering, Forecasting]
+tags: [Python, Prophet, XGBoost, Time Series, Forecasting, Supply Chain, Demand Planning]
 ---
 
 ## Abstract
 This is a time series demand forecasting project that uses 5 years of historical store-item level retail sales data to predict future demand. The project explores exploratory data analysis, time series decomposition, feature engineering and model comparison to understand what drives sales patterns across different stores and items. In addition to prediction, the analysis examines how trend, seasonality and short-term sales momentum relate to forecasting accuracy. It also demonstrates how forecasting models can support inventory planning and replenishment decisions in a supply chain context.
+
+## Project Motivation
+Demand forecasting is a core analytical skill in supply chain and retail operations, where accurate forecasts directly inform inventory planning, replenishment cycles and stockout prevention. This project was undertaken to apply forecasting techniques to a supply chain context, using the Kaggle Store Item Demand Forecasting dataset to predict daily sales for 10 stores and 50 items and comparing a seasonal baseline against Prophet and XGBoost to identify which approach best captures underlying demand patterns.
 
 ## Key Question
 This project set out to answer three core questions:
