@@ -3,7 +3,7 @@ layout: page
 title: "Classification of News Headline"
 permalink: /classification-of-news-headline/
 summary: "Compared SVM and BERT-based models to classify news headlines by source, weighing accuracy against interpretability."
-tags: [NLP, BERT, SVM, Text Classification]
+tags: [Python, NLP, BERT, SVM, Text Classification, Machine Learning]
 ---
 
 ## Abstract
