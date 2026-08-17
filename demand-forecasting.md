@@ -93,3 +93,21 @@ The decomposition confirms Prophet is capturing the same patterns identified in 
 ![XGBoost Feature Importance](https://amberrrwang.github.io/demand-images/feature_im.png)
 
 The 7-day lag and 7-day rolling average dominated feature importance, together accounting for the large majority of the model's predictive power, far outweighing calendar features like month or year and even the 365-day lag. Day of week ranked next, consistent with the weekly seasonality observed in EDA. Store and item ID contributed minimally on their own, since their effect is already captured indirectly through each series' own lag and rolling features.
+
+## Business Implications
+
+The results of this analysis translate directly into several supply chain and inventory planning decisions:
+
+**Replenishment frequency.** Feature importance showed that 7-day lag and rolling average sales were far more predictive than the 365-day (same-period-last-year) lag. In practice, this means short-cycle replenishment triggers, such as weekly reorder reviews based on recent sell-through, are likely to be more effective than static forecasts anchored to last year's seasonal calendar. Forecasting cadence should be aligned with the signal the model actually relies on.
+
+**Safety stock allocation.** The item-level EDA showed no strong 80/20 concentration; the top 10 items differed by only 14% in total volume. This even distribution suggests safety stock should be spread relatively evenly across the item catalog rather than concentrated on a small set of "hero" SKUs, since no small subset of items disproportionately drives demand risk.
+
+**Centralized vs. store-specific forecasting.** Because all 10 stores shared the same seasonal and weekly pattern, and the same items sold consistently well or poorly across every store, a single global forecasting model was sufficient. This supports a centralized demand planning approach rather than maintaining separate forecasts or safety stock policies per location, reducing planning overhead without sacrificing accuracy.
+
+**Seasonal buffer planning.** The clear, stable annual seasonality (identified in the decomposition) means inventory buildup ahead of the summer peak can be planned with confidence using a fixed seasonal factor, rather than needing a more reactive or adaptive approach: the seasonal component was consistent in shape and amplitude across all five years of data.
+
+## Potential Improvements
+
+- Incorporate promotional and pricing data, which are common demand drivers not present in this dataset but frequently used in real-world replenishment models.
+- Extend the model to directly output reorder recommendations by combining the demand forecast with lead time and target service level, connecting the forecast to an actual inventory policy (e.g., reorder point = forecasted demand during lead time + safety stock).
+- Backtest across multiple 90-day holdout windows rather than a single period, to confirm forecast accuracy holds up across different seasons rather than being specific to this one holdout window.
