@@ -86,7 +86,7 @@ An additive time series model fit independently for each of the 500 store-item c
 
 ![Prophet Forecast](demand-images/prophet.png)
 
-![Prophet Components](demand-images/prophet_components.png)
+![Prophet Components](demand-images/prophet_comp.png)
 
 The decomposition confirms Prophet is capturing the same patterns identified in EDA: a steady upward trend, a weekly cycle peaking on Sundays, and a yearly cycle peaking in summer.
 
