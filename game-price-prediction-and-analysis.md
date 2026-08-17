@@ -154,7 +154,7 @@ The CatBoost model identified language availability, genre features, and release
 
 The Random Forest model showed a similar pattern, with language availability and genre features contributing most to price prediction. Release timing also played an important role, while player activity and review metrics were less impactful.
 
-<img src="/game-images/xgboost-pie.png" alt="Game Visual" width="380">
+<img src="/game-images/xgboost-pie.png" alt="Game Visual" width="450">
 
 The XGBoost model placed the greatest emphasis on genre features, followed by language availability and release timing. Compared to the other models, XGBoost relied more heavily on genre-related information to determine pricing patterns.
 
