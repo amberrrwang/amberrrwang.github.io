@@ -3,7 +3,7 @@ layout: page
 title: "Game Price Prediction and Analysis"
 permalink: /game-price-prediction-and-analysis/
 summary: "Built and compared CatBoost, Random Forest and XGBoost models on Steam game data to uncover what drives app pricing."
-tags: [Python, XGBoost, CatBoost, Random Forest, Feature Engineering]
+tags: [Python, XGBoost, CatBoost, Random Forest, Feature Engineering, Predictive Modeling, Pricing Analytics]
 ---
 
 ## Abstract
