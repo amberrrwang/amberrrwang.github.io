@@ -17,3 +17,16 @@ This project set out to answer three core questions:
 1. Which forecasting approach, seasonal baseline, Prophet or XGBoost, produces the most accurate demand forecasts across 500 store-item combinations?
 2. What features drive short-term demand the most: recent sales momentum, calendar effects (day of week, month) or long-term seasonality (same period last year)?
 3. Do individual stores and items require separate models, or can a single global model capture shared demand patterns across locations and products?
+
+## Dataset
+The dataset is from Kaggle's Store Item Demand Forecasting Challenge, containing daily sales records from 2013–2017 across 10 stores and 50 items. Key variables include:
+- date – date of the sale record
+- store – store ID (1–10)
+- item – item ID (1–50)
+- sales – number of units sold at a given store, for a given item, on a given day
+
+The dataset explicitly excludes holiday effects and store closures, so all observed seasonality reflects underlying demand patterns rather than calendar disruptions.
+
+## Exploratory Data Analysis
+
+
