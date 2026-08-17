@@ -3,7 +3,7 @@ layout: page
 title: "Beauty Product Rating Predictor"
 permalink: /beauty-product-rating-predictor/
 summary: "Developed a regression model and interactive Tkinter app to predict beauty product ratings from pricing, brand and category data."
-tags: [Python, Regression, EDA, Tkinter GUI]
+tags: [Python, Regression, EDA, Visualization, Tkinter GUI, Consumer Insights, Product Analytics]
 ---
 
 ## Abstract
