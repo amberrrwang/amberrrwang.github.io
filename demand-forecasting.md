@@ -64,38 +64,32 @@ The top 10 items range from about 1.61 million units (Item 15, the highest) down
 The heatmap shows consistent vertical banding across all 10 stores, meaning the same items are consistently strong or weak sellers regardless of location (for example, Items 15 and 28 are dark across every row, while Item 1 stays light across every row). If regional preference played a meaningful role, this pattern would break down into more of a checkerboard, with different items standing out in different stores. Instead, item popularity is a store-independent property of the item itself. Combined with the store-level finding above, this confirms that both seasonality and item preference are shared across stores, reinforcing the decision to train a single global model rather than separate models per store or per item.
 
 ## Forecasting Models
-### Baseline: Naive Seasonal Baseline
-Forecasts each day's sales as equal to the same day one year prior, providing a minimum performance bar with no statistical modeling involved.
 
-**MAPE: 23.42%** | **RMSE: 14.96**
-
-### Model 2: Prophet
-An additive time series model fit independently for each of the 500 store-item combinations, automatically decomposing each series into trend, weekly seasonality, and yearly seasonality.
-
-![Prophet Forecast](demand-images/prophet.png)
-
-![Prophet Components](demand-images/prophet_comp.png)
-
-The decomposition confirms Prophet is capturing the same patterns identified in EDA: a steady upward trend, a weekly cycle peaking on Sundays, and a yearly cycle peaking in summer.
-
-**MAPE: 14.15%** | **RMSE: 8.26**
-
-### Model 3: XGBoost
-A single global gradient-boosted tree model trained across all 500 store-item combinations at once, using engineered calendar, lag and rolling-average features along with store and item as categorical inputs.
- 
-**MAPE: 13.03%** | **RMSE: 7.67**
+Three forecasting approaches were trained and evaluated on the same 90-day holdout period: 
+1. Seasonal baseline: carries forward last year's sales on the same date
+2. Prophet: fits an independent trend/seasonality model per store-item combination
+3. XGBoost: a single global model trained across all 500 combinations using engineered lag, rolling-average and calendar features
 
 ### Model Comparison
 
 | Model | MAPE | RMSE |
 |---|---|---|
-| Seasonal Naive Baseline | 23.42% | 14.96 |
+| Seasonal Baseline | 23.42% | 14.96 |
 | Prophet (all 500 combinations) | 14.15% | 8.26 |
 | **XGBoost** | **13.03%** | **7.67** |
 
-XGBoost achieved the best performance on both metrics, improving MAPE by 44% and RMSE by 49% relative to the baseline, and modestly outperforming Prophet on both metrics. This is consistent with the EDA finding that seasonality and item popularity patterns are shared across stores — a single global model with store/item as features can learn from the full dataset at once, rather than fitting 500 independent models as Prophet does.
+XGBoost achieved the best performance on both metrics, improving MAPE by 44% and RMSE by 49% relative to the baseline and  outperforming Prophet on both metrics. This is consistent with the EDA finding that seasonality and item popularity patterns are shared across stores, a single global model with store/item as features can learn from the full dataset at once, rather than fitting 500 independent models as Prophet does.
+
+### Prophet Forecast
+
+![Prophet Forecast](https://amberrrwang.github.io/demand-images/prophet.png)
+
+![Prophet Components](https://amberrrwang.github.io/demand-images/prophet_comp.png)
+
+The decomposition confirms Prophet is capturing the same patterns identified in EDA: a steady upward trend, a weekly cycle peaking on Sundays and a yearly cycle peaking in summer.
 
 ### Feature Importance Analysis
-![Prophet Components](demand-images/feature_im.png)
+
+![XGBoost Feature Importance](https://amberrrwang.github.io/demand-images/feature_im.png)
 
 The 7-day lag and 7-day rolling average dominated feature importance, together accounting for the large majority of the model's predictive power, far outweighing calendar features like month or year and even the 365-day lag. Day of week ranked next, consistent with the weekly seasonality observed in EDA. Store and item ID contributed minimally on their own, since their effect is already captured indirectly through each series' own lag and rolling features.
